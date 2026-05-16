@@ -48,90 +48,27 @@
 
 ---
 
-## 02 · IAM Skills & Capabilities
-
-> *Core technical knowledge underpinning all IAM work above.*
-
-| Capability | Detail |
-|---|---|
-| **Directory Services** | Active Directory DS, OU design, Group Policy Objects (GPO), user & group lifecycle |
-| **Identity Platform** | Okta — SSO, SAML 2.0, OIDC/OAuth 2.0, MFA, Lifecycle Management |
-| **Cloud Identity (Microsoft)** | Microsoft Entra ID — Conditional Access, MFA, App Registrations, Entra Connect (AD sync) |
-| **Zero Trust Access** | Cloudflare Access, Cloudflare Tunnels, Zero Trust Network Access (ZTNA) |
-| **Identity Governance** | SailPoint — access certification, role management, policy enforcement |
-| **Access Models** | RBAC design, Least Privilege enforcement, Segregation of Duties (SoD) |
-| **Account Lifecycle** | Joiners / Movers / Leavers (JML), automated provisioning & deprovisioning |
-| **Protocols** | SAML 2.0 · OIDC · OAuth 2.0 · LDAP · Kerberos |
-| **Hybrid IAM** | Bridging on-prem AD with cloud identity providers (Okta, Microsoft Entra ID) |
-
-**IAM Tech Stack**
-
-![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Okta](https://img.shields.io/badge/Okta-007DC1?style=flat-square&logo=okta&logoColor=white)
-![Cloudflare Zero Trust](https://img.shields.io/badge/Cloudflare_Zero_Trust-F48120?style=flat-square&logo=cloudflare&logoColor=white)
-![SailPoint](https://img.shields.io/badge/SailPoint_IGA-003087?style=flat-square)
-![SAML](https://img.shields.io/badge/SAML_2.0-555555?style=flat-square)
-![OIDC](https://img.shields.io/badge/OIDC_%2F_OAuth_2.0-555555?style=flat-square)
-![RBAC](https://img.shields.io/badge/RBAC_Design-555555?style=flat-square)
-![JML](https://img.shields.io/badge/JML_Lifecycle_Automation-555555?style=flat-square)
-![Conditional Access](https://img.shields.io/badge/Conditional_Access-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![MFA](https://img.shields.io/badge/MFA-555555?style=flat-square)
-![Entra Connect](https://img.shields.io/badge/Entra_Connect_(AD_Sync)-555555?style=flat-square)
-
----
-
-## 03 · Governance, Risk & Compliance (GRC)
+## 02 · Governance, Risk & Compliance (GRC)
 
 > I approach GRC as a practical discipline — not a checkbox exercise. My focus is on building risk programs that are aligned to recognised frameworks (**NIST CSF, ISO 27001, SOC 2**) and actually usable by the organisations they serve. This means conducting honest gap analyses, building dynamic risk registers, and translating control requirements into clear documentation that holds up under audit.
 >
 > On the operational side I manage **third-party and supply chain risk**, own the full policy lifecycle from drafting to review, and have delivered compliance advisory across **Healthcare, Fintech, Retail, and Technology** sectors. I also integrate **AI governance** into risk programs — building controls for responsible AI adoption and RAG-based automation — and I treat **human risk** (phishing, social engineering, security culture) as a first-class GRC concern, not an afterthought.
 
-| Capability | Detail |
-|---|---|
-| **Framework Implementation** | NIST CSF, ISO 27001, SOC 2 — gap analysis, control mapping, audit readiness |
-| **Risk Operations** | Enterprise risk assessments, risk quantification, dynamic risk register management |
-| **Third-Party Risk (TPRM)** | Vendor security reviews, supply chain governance, procurement collaboration |
-| **Policy Lifecycle** | End-to-end security policy development, documentation standards, governance processes |
-| **Compliance Advisory** | Sector experience across Healthcare, Fintech, Retail, and Technology |
-| **AI Governance** | Responsible AI controls, RAG system risk management, AI automation policy |
-| **Human Risk Management** | Security awareness programs, phishing mitigation, social engineering defense |
+| Capability | Detail | Proof |
+|---|---|---|
+| **Framework Implementation** | NIST CSF, ISO 27001, SOC 2 — gap analysis, control mapping, audit readiness | [Controls Mapping](https://github.com/danielawurah/grc-security-policies/tree/main/CONTROLS-MAPPING) |
+| **Risk Operations** | Enterprise risk assessments, risk quantification, dynamic risk register management | [Risk Assessment Template](https://github.com/danielawurah/grc-security-policies/blob/main/TEMPLATES/risk-assessment-template.xlsx) |
+| **Third-Party Risk (TPRM)** | Vendor security reviews, supply chain governance, procurement collaboration | [Exception Request Form](https://github.com/danielawurah/grc-security-policies/blob/main/TEMPLATES/exception-request-form.md) |
+| **Policy Lifecycle** | End-to-end security policy development, documentation standards, governance processes | [Global Controls](https://github.com/danielawurah/grc-security-policies/tree/main/GLOBAL-CONTROLS) |
+| **Compliance Advisory** | Sector experience across Healthcare, Fintech, Retail, and Technology | [Industry Verticals](https://github.com/danielawurah/grc-security-policies/tree/main/INDUSTRY-VERTICALS) |
+| **AI Governance** | Responsible AI controls, RAG system risk management, AI automation policy | [Automated Compliance Guide](https://github.com/danielawurah/grc-security-policies/blob/main/STARTUPS-SMB/automated-compliance-guide.md) |
+| **Human Risk Management** | Security awareness programs, phishing mitigation, social engineering defense | [Awareness Training Policy](https://github.com/danielawurah/grc-security-policies/blob/main/GLOBAL-CONTROLS/awareness-training.md) |
 
-**GRC Tech & Frameworks**
-
-![NIST CSF](https://img.shields.io/badge/NIST_CSF-003087?style=flat-square)
-![ISO 27001](https://img.shields.io/badge/ISO_27001-0052CC?style=flat-square)
-![SOC 2](https://img.shields.io/badge/SOC_2-6554C0?style=flat-square)
-![TPRM](https://img.shields.io/badge/Third--Party_Risk_(TPRM)-555555?style=flat-square)
-![Risk Register](https://img.shields.io/badge/Risk_Register_Management-555555?style=flat-square)
-![AppSec](https://img.shields.io/badge/AppSec_%2F_OWASP_Top_10-000000?style=flat-square&logo=owasp&logoColor=white)
-![SSDLC](https://img.shields.io/badge/Secure_SDLC-555555?style=flat-square)
-
-### GRC Project Repository
-
-> Full repository → [danielawurah/grc-security-policies](https://github.com/danielawurah/grc-security-policies) — Centralized governance, risk, and compliance security policies, standards, and procedures.
-
-| Project / Deliverable | Proof | Purpose | Frameworks | Status |
-|---|---|---|---|---|
-| [**Controls Mapping — ISO 27001**](https://github.com/danielawurah/grc-security-policies/blob/main/CONTROLS-MAPPING/iso-27001-2022-map.csv) | CSV Document | Maps organizational controls to ISO 27001:2022 requirements for audit readiness and gap analysis. | ISO 27001 | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Controls Mapping — NIST 800-53**](https://github.com/danielawurah/grc-security-policies/blob/main/CONTROLS-MAPPING/nist-800-53-map.csv) | CSV Document | Maps security controls to NIST SP 800-53 control families to support federal and enterprise compliance posture. | NIST 800-53 | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Controls Mapping — SOC 2 TSC**](https://github.com/danielawurah/grc-security-policies/blob/main/CONTROLS-MAPPING/soc2-tsc-mapping.md) | Document | Maps internal controls to SOC 2 Trust Services Criteria (Availability, Confidentiality, Security). | SOC 2 | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Access Control Policy**](https://github.com/danielawurah/grc-security-policies/blob/main/GLOBAL-CONTROLS/access-control.md) | Document | Defines enterprise-wide access control standards covering identity verification, least privilege, and role-based access governance. | ISO 27001 · NIST CSF | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Security Awareness Training Policy**](https://github.com/danielawurah/grc-security-policies/blob/main/GLOBAL-CONTROLS/awareness-training.md) | Document | Establishes mandatory security awareness training requirements to reduce human risk and social engineering exposure. | NIST CSF · SOC 2 | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Encryption Standard**](https://github.com/danielawurah/grc-security-policies/blob/main/GLOBAL-CONTROLS/encryption-standard.md) | Document | Defines data encryption standards for data at rest and in transit across all organizational systems and cloud environments. | ISO 27001 · SOC 2 | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Incident Response Plan**](https://github.com/danielawurah/grc-security-policies/blob/main/GLOBAL-CONTROLS/incident-response.md) | Document | Structured incident response playbook covering detection, containment, eradication, recovery, and post-incident review. | NIST CSF · ISO 27001 | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Industry Verticals — AI/SaaS, Fintech, Healthcare**](https://github.com/danielawurah/grc-security-policies/tree/main/INDUSTRY-VERTICALS) | Documents | Tailored compliance guidance for regulated sectors including AI/SaaS, Fintech, and Healthcare — addressing sector-specific risks and regulatory requirements. | ISO 27001 · HIPAA · PCI-DSS | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Startup Security Baseline**](https://github.com/danielawurah/grc-security-policies/blob/main/STARTUPS-SMB/startup-security-baseline.md) | Document | Minimum viable security baseline for early-stage startups and SMBs to establish foundational controls quickly and cost-effectively. | NIST CSF · SOC 2 | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Automated Compliance Guide**](https://github.com/danielawurah/grc-security-policies/blob/main/STARTUPS-SMB/automated-compliance-guide.md) | Document | Guide for automating compliance workflows to reduce manual overhead and maintain continuous audit readiness. | SOC 2 · ISO 27001 | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Employee Offboarding (Lean)**](https://github.com/danielawurah/grc-security-policies/blob/main/STARTUPS-SMB/employee-offboarding-lean.md) | Document | Streamlined offboarding checklist ensuring timely access revocation, data recovery, and account deprovisioning. | ISO 27001 · NIST CSF | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Zero Trust for Remote Access**](https://github.com/danielawurah/grc-security-policies/blob/main/STARTUPS-SMB/zero-trust-for-remote.md) | Document | Policy and implementation guide for adopting Zero Trust principles for remote workforce access. | NIST CSF · Zero Trust | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Simple Incident Response (SMB)**](https://github.com/danielawurah/grc-security-policies/blob/main/STARTUPS-SMB/simple-incident-response.md) | Document | Lightweight incident response playbook tailored for small businesses without a dedicated security team. | NIST CSF | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Exception Request Form**](https://github.com/danielawurah/grc-security-policies/blob/main/TEMPLATES/exception-request-form.md) | Template | Standardized form for requesting policy exceptions with risk justification, approver sign-off, and expiry tracking. | ISO 27001 · SOC 2 | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Risk Assessment Template**](https://github.com/danielawurah/grc-security-policies/blob/main/TEMPLATES/risk-assessment-template.xlsx) | Template | Structured risk assessment workbook for identifying, scoring, and tracking enterprise risks against likelihood and impact. | NIST CSF · ISO 27001 | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+> Full repository → [danielawurah/grc-security-policies](https://github.com/danielawurah/grc-security-policies)
 
 ---
 
-## 04 · Certifications
+## 03 · Certifications
 
 **Earned**
 
@@ -152,7 +89,7 @@
 
 ---
 
-## 05 · Education
+## 04 · Education
 
 <p>
   <img src="https://img.shields.io/badge/B.Sc._Information_Technology-KNUST_%2F_GTUC-1B5E20?style=flat-square&logo=googlescholar&logoColor=white" />
@@ -171,7 +108,7 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 ---
 
-## 06 · Supporting Technical Skills
+## 05 · Supporting Technical Skills
 
 *Infrastructure and IT foundation that underpins IAM and security work.*
 
@@ -188,7 +125,7 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 ---
 
-## 07 · IAM & GRC Project Work
+## 06 · IAM & GRC Project Work
 
 | Project | IAM / GRC Focus | Outcome |
 |---|---|---|
