@@ -83,7 +83,9 @@
 
 ## 03 · Governance, Risk & Compliance (GRC)
 
-> *Secondary focus area. Building risk programs that function as business enablers, not roadblocks.*
+> I approach GRC as a practical discipline — not a checkbox exercise. My focus is on building risk programs that are aligned to recognised frameworks (**NIST CSF, ISO 27001, SOC 2**) and actually usable by the organisations they serve. This means conducting honest gap analyses, building dynamic risk registers, and translating control requirements into clear documentation that holds up under audit.
+>
+> On the operational side I manage **third-party and supply chain risk**, own the full policy lifecycle from drafting to review, and have delivered compliance advisory across **Healthcare, Fintech, Retail, and Technology** sectors. I also integrate **AI governance** into risk programs — building controls for responsible AI adoption and RAG-based automation — and I treat **human risk** (phishing, social engineering, security culture) as a first-class GRC concern, not an afterthought.
 
 | Capability | Detail |
 |---|---|
