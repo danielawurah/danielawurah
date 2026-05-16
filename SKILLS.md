@@ -156,9 +156,7 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 ---
 
-## 07 · Homelab Projects
-
-### Identity & Access Management Labs
+## 01 · Identity & Access Management
 
 | Workflow Project | Proof | Purpose | Stack | Status |
 |---|---|---|---|---|
