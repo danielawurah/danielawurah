@@ -34,17 +34,12 @@
 |---|---|---|---|---|
 | **Enterprise ABAC & Lifecycle Automation** | Video & Runbook | Zero-Touch JML automation — maps HR attributes to dynamic group memberships for automatic Birthright Access provisioning and revocation. | Okta · AD · ABAC · SCIM · PowerShell | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
 | **Identity Governance & Segregation of Duties** | Audit Logs & Screenshots | Mitigates Privilege Creep and Insider Threat via SoD enforcement and simulated Access Certification campaign aligned to Least Privilege. | Okta · SailPoint · Access Reviews · Audit Logs | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **REST API Automation & Bulk Identity Provisioning** | Postman Collections · JSON · Console Screenshots | Programmatic identity lifecycle management via REST APIs — bulk user creation, attribute manipulation, and failed provisioning troubleshooting at scale. | Okta · Entra ID API · Postman · REST · JSON | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
 | **Privileged Access Management (PAM) & Just-in-Time Access** | Screenshots & Video | JIT access workflow — elevated privileges requested, approved, and auto-expired, eliminating standing access and reducing blast radius. | Okta · Entra ID · PIM · JIT · Approval Workflow | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Identity-Centric Zero Trust Network Access (ZTNA)** | Architecture Diagram & Screenshots | Replaces traditional VPN with Cloudflare Tunnel — enforces identity-verified, least-privilege access to internal AD resources without public internet exposure. | AD · Cloudflare Zero Trust · ZTNA · Cloudflare Tunnel · MFA | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **REST API Automation & Bulk Identity Provisioning** | Postman Collections · JSON · Console Screenshots | Programmatic identity lifecycle management via REST APIs — bulk user creation, attribute manipulation, and failed provisioning troubleshooting at scale. | Okta · Entra ID API · Postman · REST · JSON | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
 | **SAML Integration with Service Provider (Salesforce)** | Video & Screenshots | Foundational SSO configuration using SAML 2.0 — establishes identity federation between Okta and a third-party SaaS application. | Okta · SAML 2.0 · Salesforce | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
 | **Modern Protocol Mastery (OIDC + PKCE)** | Screenshots | Integrates a custom app (WordPress) using OIDC + PKCE — secure auth code flow without a client secret for public clients. | Okta · WordPress · OIDC · PKCE · OAuth 2.0 | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
 | **Ortoorg — Multi-Org Identity Federation** | Screenshots | Cross-org identity federation — external users authenticate into a target environment without separate credentials. | Okta · Org2Org · Federation · SAML | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
-
-### Zero Trust Architecture & Secure Remote Access
-
-| Workflow Project | Proof | Purpose | Stack | Status |
-|---|---|---|---|---|
-| **Identity-Centric Zero Trust Network Access (ZTNA)** | Architecture Diagram & Screenshots | Eliminates the need for traditional VPNs by implementing a Cloudflare Tunnel to secure internal Active Directory resources. Enforces identity-verified, least-privilege access to internal apps without exposing them to the public internet. | AD · Cloudflare Zero Trust · ZTNA · Cloudflare Tunnel · MFA | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
 
 **IAM Tech Stack**
 
