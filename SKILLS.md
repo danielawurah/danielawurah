@@ -32,19 +32,34 @@
 
 | Workflow Project | Proof | Purpose | Stack | Status |
 |---|---|---|---|---|
-| **SAML Integration with Service Provider (Salesforce)** | Video & Screenshots | Pre-requisite lab establishing foundational SSO configuration before all proceeding identity labs. | Okta · SAML 2.0 · Salesforce | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **Privileged Access Management (PAM) & Just-in-Time Access** | Screenshots & Video | Implements a JIT access workflow where elevated privileges are requested, approved, and automatically expired — eliminating standing access and reducing blast radius. | Okta · Entra ID · PIM · JIT · Approval Workflow | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **Enterprise ABAC & Lifecycle Automation** | Video & Runbook | Demonstrates "Zero-Touch" provisioning using Attribute-Based Access Control (ABAC). Automates the full Joiner-Mover-Leaver (JML) lifecycle by mapping HR attributes to dynamic group memberships, ensuring Birthright Access is granted instantly and revoked automatically during role changes. | Okta · Active Directory · ABAC · SCIM · PowerShell | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **Identity Governance & Segregation of Duties** | Audit Logs & Screenshots | Focuses on mitigating Privilege Creep and Insider Threat risks. Implements a Segregation of Duties (SoD) framework to prevent conflicting access (e.g., Requestor vs. Approver) and conducts a simulated Access Certification campaign to validate and prune elevated permissions per the Principle of Least Privilege. | Okta · SailPoint · Access Reviews · Audit Logs · CSV | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **REST API Automation & Bulk Identity Provisioning** | Postman Collections · JSON Payloads · Console Screenshots | Demonstrates programmatic identity lifecycle management using REST APIs. Uses Postman to execute bulk user creation, manipulate user attributes via HTTP methods (POST, PUT, PATCH), and leverage API response codes to troubleshoot failed provisioning cycles — bypassing the GUI for scalable operations. | Okta · Entra ID API · Postman · REST APIs · JSON · HTTP Methods | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **Modern Protocol Mastery (OIDC + PKCE)** | Screenshots | Integrates a custom application (WordPress) using OIDC with PKCE — demonstrating secure authorization code flow without a client secret, suitable for public clients. | Okta · WordPress · OIDC · PKCE · OAuth 2.0 | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
-| **Ortoorg — Multi-Org Identity Federation** | Screenshots | Configures cross-organization identity federation, demonstrating how users from an external org can authenticate into a target environment without separate credentials. | Okta · Org2Org · Federation · SAML | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
+| **Enterprise ABAC & Lifecycle Automation** | Video & Runbook | Zero-Touch JML automation — maps HR attributes to dynamic group memberships for automatic Birthright Access provisioning and revocation. | Okta · AD · ABAC · SCIM · PowerShell | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Identity Governance & Segregation of Duties** | Audit Logs & Screenshots | Mitigates Privilege Creep and Insider Threat via SoD enforcement and simulated Access Certification campaign aligned to Least Privilege. | Okta · SailPoint · Access Reviews · Audit Logs | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **REST API Automation & Bulk Identity Provisioning** | Postman Collections · JSON · Console Screenshots | Programmatic identity lifecycle management via REST APIs — bulk user creation, attribute manipulation, and failed provisioning troubleshooting at scale. | Okta · Entra ID API · Postman · REST · JSON | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Privileged Access Management (PAM) & Just-in-Time Access** | Screenshots & Video | JIT access workflow — elevated privileges requested, approved, and auto-expired, eliminating standing access and reducing blast radius. | Okta · Entra ID · PIM · JIT · Approval Workflow | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **SAML Integration with Service Provider (Salesforce)** | Video & Screenshots | Foundational SSO configuration using SAML 2.0 — establishes identity federation between Okta and a third-party SaaS application. | Okta · SAML 2.0 · Salesforce | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Modern Protocol Mastery (OIDC + PKCE)** | Screenshots | Integrates a custom app (WordPress) using OIDC + PKCE — secure auth code flow without a client secret for public clients. | Okta · WordPress · OIDC · PKCE · OAuth 2.0 | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
+| **Ortoorg — Multi-Org Identity Federation** | Screenshots | Cross-org identity federation — external users authenticate into a target environment without separate credentials. | Okta · Org2Org · Federation · SAML | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
 
 ### Zero Trust Architecture & Secure Remote Access
 
 | Workflow Project | Proof | Purpose | Stack | Status |
 |---|---|---|---|---|
 | **Identity-Centric Zero Trust Network Access (ZTNA)** | Architecture Diagram & Screenshots | Eliminates the need for traditional VPNs by implementing a Cloudflare Tunnel to secure internal Active Directory resources. Enforces identity-verified, least-privilege access to internal apps without exposing them to the public internet. | AD · Cloudflare Zero Trust · ZTNA · Cloudflare Tunnel · MFA | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+
+**IAM Tech Stack**
+
+![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Okta](https://img.shields.io/badge/Okta-007DC1?style=flat-square&logo=okta&logoColor=white)
+![Cloudflare Zero Trust](https://img.shields.io/badge/Cloudflare_Zero_Trust-F48120?style=flat-square&logo=cloudflare&logoColor=white)
+![SailPoint](https://img.shields.io/badge/SailPoint_IGA-003087?style=flat-square)
+![SAML](https://img.shields.io/badge/SAML_2.0-555555?style=flat-square)
+![OIDC](https://img.shields.io/badge/OIDC_%2F_OAuth_2.0-555555?style=flat-square)
+![RBAC](https://img.shields.io/badge/RBAC_Design-555555?style=flat-square)
+![JML](https://img.shields.io/badge/JML_Lifecycle_Automation-555555?style=flat-square)
+![Conditional Access](https://img.shields.io/badge/Conditional_Access-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![MFA](https://img.shields.io/badge/MFA-555555?style=flat-square)
+![Entra Connect](https://img.shields.io/badge/Entra_Connect_(AD_Sync)-555555?style=flat-square)
 
 ---
 
