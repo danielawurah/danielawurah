@@ -16,6 +16,21 @@ This lab is the **foundational prerequisite** for all subsequent IAM projects, e
 
 ---
 
+## Screenshots
+
+> *(Screenshots folder — see repo files above)*
+
+| Screenshot | Description |
+|---|---|
+| `ad-agent-sync.png` | AD Agent installed and users syncing from AD to Okta |
+| `okta-app-saml-config.png` | SAML settings configured inside Okta app |
+| `attribute-mapping.png` | Attribute statements mapping AD fields to Salesforce |
+| `salesforce-sso-settings.png` | Salesforce SP configuration with Okta cert uploaded |
+| `sso-login-flow.png` | End-to-end SSO login flow working successfully |
+| `access-denied.png` | Unassigned user denied access at Okta |
+
+---
+
 ## Environment
 
 | Component | Detail |
@@ -92,21 +107,6 @@ This lab is the **foundational prerequisite** for all subsequent IAM projects, e
 - Validated **SP-initiated SSO** — navigated to Salesforce login URL, was redirected to Okta, authenticated, returned to Salesforce
 - Verified **attribute mapping** — confirmed name and email appeared correctly inside Salesforce from AD data
 - Tested **access control** — users not assigned to the Okta app were denied access
-
----
-
-## Screenshots
-
-> *(Screenshots folder — see repo files above)*
-
-| Screenshot | Description |
-|---|---|
-| `ad-agent-sync.png` | AD Agent installed and users syncing from AD to Okta |
-| `okta-app-saml-config.png` | SAML settings configured inside Okta app |
-| `attribute-mapping.png` | Attribute statements mapping AD fields to Salesforce |
-| `salesforce-sso-settings.png` | Salesforce SP configuration with Okta cert uploaded |
-| `sso-login-flow.png` | End-to-end SSO login flow working successfully |
-| `access-denied.png` | Unassigned user denied access at Okta |
 
 ---
 
