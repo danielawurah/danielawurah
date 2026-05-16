@@ -158,13 +158,25 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 ## 07 · Homelab Projects
 
-> **Coming Soon** — Active Directory, Okta, and Cloudflare homelab builds are in progress. This section will be updated with documented projects, proof of work, and technical walkthroughs once uploaded.
+### Identity & Access Management Labs
 
-| Project | Stack | Status |
-|---|---|---|
-| Active Directory Home Lab | Windows Server · AD DS · DNS · DHCP | *Coming Soon* |
-| Okta IAM Lab | Okta · SAML · OIDC · RBAC | *Coming Soon* |
-| Cloudflare Zero Trust Lab | Cloudflare Access · Zero Trust · Tunnels | *Coming Soon* |
+| Workflow Project | Proof | Purpose | Stack | Status |
+|---|---|---|---|---|
+| **SAML Integration with Service Provider (Salesforce)** | Video & Screenshots | Pre-requisite lab establishing foundational SSO configuration before all proceeding identity labs. | Okta · SAML 2.0 · Salesforce | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Privileged Access Management (PAM) & Just-in-Time Access** | Screenshots & Video | Implements a JIT access workflow where elevated privileges are requested, approved, and automatically expired — eliminating standing access and reducing blast radius. | Okta · Entra ID · PIM · JIT · Approval Workflow | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Enterprise ABAC & Lifecycle Automation** | Video & Runbook | Demonstrates "Zero-Touch" provisioning using Attribute-Based Access Control (ABAC). Automates the full Joiner-Mover-Leaver (JML) lifecycle by mapping HR attributes to dynamic group memberships, ensuring Birthright Access is granted instantly and revoked automatically during role changes. | Okta · Active Directory · ABAC · SCIM · PowerShell | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Identity Governance & Segregation of Duties** | Audit Logs & Screenshots | Focuses on mitigating Privilege Creep and Insider Threat risks. Implements a Segregation of Duties (SoD) framework to prevent conflicting access (e.g., Requestor vs. Approver) and conducts a simulated Access Certification campaign to validate and prune elevated permissions per the Principle of Least Privilege. | Okta · SailPoint · Access Reviews · Audit Logs · CSV | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **REST API Automation & Bulk Identity Provisioning** | Postman Collections · JSON Payloads · Console Screenshots | Demonstrates programmatic identity lifecycle management using REST APIs. Uses Postman to execute bulk user creation, manipulate user attributes via HTTP methods (POST, PUT, PATCH), and leverage API response codes to troubleshoot failed provisioning cycles — bypassing the GUI for scalable operations. | Okta · Entra ID API · Postman · REST APIs · JSON · HTTP Methods | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Modern Protocol Mastery (OIDC + PKCE)** | Screenshots | Integrates a custom application (WordPress) using OIDC with PKCE — demonstrating secure authorization code flow without a client secret, suitable for public clients. | Okta · WordPress · OIDC · PKCE · OAuth 2.0 | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
+| **Ortoorg — Multi-Org Identity Federation** | Screenshots | Configures cross-organization identity federation, demonstrating how users from an external org can authenticate into a target environment without separate credentials. | Okta · Org2Org · Federation · SAML | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
+
+---
+
+### Zero Trust Architecture & Secure Remote Access
+
+| Workflow Project | Proof | Purpose | Stack | Status |
+|---|---|---|---|---|
+| **Identity-Centric Zero Trust Network Access (ZTNA)** | Architecture Diagram & Screenshots | Eliminates the need for traditional VPNs by implementing a Cloudflare Tunnel to secure internal Active Directory resources. Enforces identity-verified, least-privilege access to internal apps without exposing them to the public internet. | AD · Cloudflare Zero Trust · ZTNA · Cloudflare Tunnel · MFA | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
 
 ---
 
