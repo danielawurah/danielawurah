@@ -1,107 +1,152 @@
-<h1 align="center">Evan H. Yearwood</h1>
+<h1 align="center">Daniel Awurah</h1>
 
 <p align="center">
-  <em>Security Engineer</em>
-</p>
-<p align="center">
-<em>Technical Support Specialist @ Yext</em>
+  <em>Identity & Access Management Specialist &nbsp;·&nbsp; GRC Strategist &nbsp;·&nbsp; Security Advisor</em>
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/evan-yearwood/">
-    <img src="https://img.shields.io/badge/LinkedIn-evan--yearwood-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
+  <img src="https://img.shields.io/badge/B.Sc._Information_Technology-KNUST-1B5E20?style=flat-square&logo=googlescholar&logoColor=white" />
+  &nbsp;
+  <a href="https://www.linkedin.com/in/daniel-awurah-09912b123/">
+    <img src="https://img.shields.io/badge/LinkedIn-daniel--awurah-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
   </a>
+  &nbsp;
+  <a href="mailto:awurahdaniel@gmail.com">
+    <img src="https://img.shields.io/badge/Email-awurahdaniel%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" />
+  </a>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Location-Carmel%2C_Indiana-555555?style=flat-square" />
 </p>
 
 ---
 
-> **Portfolio Note**
+> **About**
 >
-> The projects in this portfolio are intentionally designed to **simulate the real workflows of an Identity & Access Management (IAM) professional working in enterprise environments**.  
->  
-> Each project focuses on practical security tasks such as identity lifecycle automation, RBAC design, access governance, privileged access management, and integration between systems like **Active Directory, Okta, and Microsoft Entra ID**.  
->  
-> The goal is to demonstrate **how a security engineer designs, automates, and manages identity systems at scale**, using scripting, identity platforms, and security best practices to enforce consistent access control across hybrid environments.
+> IAM and GRC professional specializing in **enterprise identity architecture** — designing and governing access controls across **Active Directory, Okta, Microsoft Entra ID, and Cloudflare Zero Trust**. I build identity programs that enforce least privilege, automate the JML lifecycle, and align access governance to frameworks like **NIST CSF, ISO 27001, and SOC 2**.
+>
+> Currently building out a hands-on IAM homelab portfolio to document real-world configurations in Active Directory, Okta, and Entra ID. Open to entry-level and mid-level IAM and GRC roles where I can contribute, keep learning, and grow within a team.
 
 ---
 
-## Identity & Access Management
+## 01 · Identity & Access Management
 
 | Workflow Project | Proof | Purpose | Stack | Status |
 |---|---|---|---|---|
-| [**SaaS App Integration w/ Okta (SAML)**](https://github.com/EvanHYearwood/App_Integration_SAML_2.0) | Video & Screenshots Included | This lab serves as a pre-requisite step before all proceeding labs. | Okta · SAML | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Implementing (RBAC) W/ Okta**](https://github.com/EvanHYearwood/RBAC-W-AD-Okta) | Video & Screenshots Included | This lab demonstrates well designed RBAC. | AD · Okta · SAML | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Automated JML W/ Cert-Based AuthN**](https://github.com/EvanHYearwood/jml-automation-lab) | Video & Screenshots Included | This lab automates the JML lifecycle between Active Directory and Okta using RSA-signed JWTs for secure API communication.| AD · Okta PowerShell · OAuth 2.0 · RSA · JWT| ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square)  |
-| [**Entra ID & AD Configuration**](https://github.com/EvanHYearwood/Entra-ID_AD_Prod-Environment) | Screenshots Only |In this project I configure a hybrid environment from scratch and create Operational Runbooks for common issues. This includes CA Policies, 3 Applications 2 different AuthN Protocols(OIDC + PKCE and SAML 2.0). I also do implementation testing with Microsoft Graph API, decoding SAML assertions to resolve issues, decoding JWTs to annotates ID/Access tokens, and testing CA enforcement.  | Active Directory · Entra ID · Entra Connect · Conditional Access · MFA | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **SSO & SCIM Automation: SaaS Pro/Deprovisioning** || We'll be integrating SaaS applications with SSO and automates user provisioning and deprovisioning to maintain consistent identity lifecycle across systems.| Entra ID · Okta · SAML · OIDC · SCIM | In Progress |
-| **Access Reviews: Certification and Audit Workflow** ||Here I Simulate periodic access reviews where permissions are approved or revoked, with audit logs generated for compliance and governance.| Entra ID · Access Reviews · Audit Logs · CSV | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
-| **Privileged Access: Just-in-time Role Elevation (PIM)** ||Now I implement a workflow for requesting and granting temporary elevated access with approval and automatic expiration.| Entra ID · PIM · Approval Workflow · JIT | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
-| **Identity Monitoring: Risky Sign-Ins and Incident Response** ||Finally I'll be Detecting and investigating suspicious login activity using identity logs and automated response mechanisms.| Entra ID · Sign-In Logs · Sentinel · KQL | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
+| **Enterprise ABAC & Lifecycle Automation** | Video & Runbook | Zero-Touch JML automation — maps HR attributes to dynamic group memberships for automatic Birthright Access provisioning and revocation. | Okta · AD · ABAC · SCIM · PowerShell | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Identity Governance & Segregation of Duties** | Audit Logs & Screenshots | Mitigates Privilege Creep and Insider Threat via SoD enforcement and simulated Access Certification campaign aligned to Least Privilege. | Okta · SailPoint · Access Reviews · Audit Logs | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Privileged Access Management (PAM) & Just-in-Time Access** | Screenshots & Video | JIT access workflow — elevated privileges requested, approved, and auto-expired, eliminating standing access and reducing blast radius. | Okta · Entra ID · PIM · JIT · Approval Workflow | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Identity-Centric Zero Trust Network Access (ZTNA)** | Architecture Diagram & Screenshots | Replaces traditional VPN with Cloudflare Tunnel — enforces identity-verified, least-privilege access to internal AD resources without public internet exposure. | AD · Cloudflare Zero Trust · ZTNA · Cloudflare Tunnel · MFA | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| [**REST API Automation & Bulk Identity Provisioning**](https://github.com/danielawurah/bulk-identity-provisioning) | Postman Collections · JSON · Console Screenshots | Programmatic identity lifecycle management via REST APIs — bulk user creation, attribute manipulation, and failed provisioning troubleshooting at scale. | Okta · Entra ID API · Postman · REST · JSON | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| [**SAML Integration with Service Provider (Salesforce)**](https://github.com/danielawurah/saml-okta-salesforce) | Video & Screenshots | Foundational SSO configuration using SAML 2.0 — establishes identity federation between Okta and a third-party SaaS application. | Okta · SAML 2.0 · Salesforce | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Modern Protocol Mastery (OIDC + PKCE)** | Screenshots | Integrates a custom app (WordPress) using OIDC + PKCE — secure auth code flow without a client secret for public clients. | Okta · WordPress · OIDC · PKCE · OAuth 2.0 | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
+| **Ortoorg — Multi-Org Identity Federation** | Screenshots | Cross-org identity federation — external users authenticate into a target environment without separate credentials. | Okta · Org2Org · Federation · SAML | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
 
+**IAM Tech Stack**
 
-> **Focus area:** Managing identity across hybrid environments. Bridging on-premises Active Directory and cloud platforms like Okta and Microsoft Entra ID. Projects cover the full IAM lifecycle: provisioning, access reviews, privileged access, and offboarding, with PowerShell automation at each stage to reduce manual effort and enforce consistent policy at scale.
-
----
-
-## 2 · IT Support Projects
-
-### Help Desk (osTicket)
-
-| Project | Notes |
-|---|---|
-| [Prerequisites & Installation](https://github.com/EvanHYearwood/osticket-prereqs) | ▶ Video included |
-| [Post-Installation Configuration](https://github.com/EvanHYearwood/post-install-config) | ▶ Video included |
-| [Ticket Lifecycle & SLAs](https://github.com/EvanHYearwood/ticket-lifecycle) | ▶ Video included |
-
-### Microsoft Azure / Active Directory
-
-| Project | Notes |
-|---|---|
-| [Configuring On-Premises Active Directory within Azure VMs](https://github.com/EvanHYearwood/configure-ad) | ▶ Video included |
-| [Network Security Groups (NSGs) & Network Protocol Analysis](https://github.com/EvanHYearwood/azure-network-protocols) | Wireshark |
-| [Basic DNS Configuration & Testing](https://github.com/EvanHYearwood/dns-config) | Azure |
+![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Okta](https://img.shields.io/badge/Okta-007DC1?style=flat-square&logo=okta&logoColor=white)
+![Cloudflare Zero Trust](https://img.shields.io/badge/Cloudflare_Zero_Trust-F48120?style=flat-square&logo=cloudflare&logoColor=white)
+![SailPoint](https://img.shields.io/badge/SailPoint_IGA-003087?style=flat-square)
+![SAML](https://img.shields.io/badge/SAML_2.0-555555?style=flat-square)
+![OIDC](https://img.shields.io/badge/OIDC_%2F_OAuth_2.0-555555?style=flat-square)
+![RBAC](https://img.shields.io/badge/RBAC_Design-555555?style=flat-square)
+![JML](https://img.shields.io/badge/JML_Lifecycle_Automation-555555?style=flat-square)
+![Conditional Access](https://img.shields.io/badge/Conditional_Access-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![MFA](https://img.shields.io/badge/MFA-555555?style=flat-square)
+![Entra Connect](https://img.shields.io/badge/Entra_Connect_(AD_Sync)-555555?style=flat-square)
 
 ---
 
-## 03 · Security Projects
+## 02 · Governance, Risk & Compliance (GRC)
 
-| Project | Focus |
-|---|---|
-| [Internal Security Audit — Botium Toys](https://github.com/EvanHYearwood/Security-Audit-Botium-Toys) | Risk assessment · audit evidence · mitigation |
-| [Python Algorithm — User Access Management](https://github.com/EvanHYearwood/python-user-access-management) | Scripted RBAC logic |
-| [SQL Security Investigation — Login & Machine Access Patterns](https://github.com/EvanHYearwood/sql-investigation/) | Threat analysis · access logs |
-| [Linux — Enforcing Least Privilege via File Permissions](https://github.com/EvanHYearwood/linux-file-permisions/) | Hardening · principle of least privilege |
+> I approach GRC as a practical discipline — not a checkbox exercise. My focus is on building risk programs that are aligned to recognised frameworks (**NIST CSF, ISO 27001, SOC 2**) and actually usable by the organisations they serve. This means conducting honest gap analyses, building dynamic risk registers, and translating control requirements into clear documentation that holds up under audit.
+>
+> On the operational side I manage **third-party and supply chain risk**, own the full policy lifecycle from drafting to review, and have delivered compliance advisory across **Healthcare, Fintech, Retail, and Technology** sectors. I also integrate **AI governance** into risk programs — building controls for responsible AI adoption and RAG-based automation — and I treat **human risk** (phishing, social engineering, security culture) as a first-class GRC concern, not an afterthought.
+
+| Capability | Detail | Proof |
+|---|---|---|
+| **Framework Implementation** | NIST CSF, ISO 27001, SOC 2 — gap analysis, control mapping, audit readiness | [Controls Mapping](https://github.com/danielawurah/grc-security-policies/tree/main/CONTROLS-MAPPING) |
+| **Risk Operations** | Enterprise risk assessments, risk quantification, dynamic risk register management | [Risk Assessment Template](https://github.com/danielawurah/grc-security-policies/blob/main/TEMPLATES/risk-assessment-template.xlsx) |
+| **Third-Party Risk (TPRM)** | Vendor security reviews, supply chain governance, procurement collaboration | [Exception Request Form](https://github.com/danielawurah/grc-security-policies/blob/main/TEMPLATES/exception-request-form.md) |
+| **Policy Lifecycle** | End-to-end security policy development, documentation standards, governance processes | [Global Controls](https://github.com/danielawurah/grc-security-policies/tree/main/GLOBAL-CONTROLS) |
+| **Compliance Advisory** | Sector experience across Healthcare, Fintech, Retail, and Technology | [Industry Verticals](https://github.com/danielawurah/grc-security-policies/tree/main/INDUSTRY-VERTICALS) |
+| **AI Governance** | Responsible AI controls, RAG system risk management, AI automation policy | [Automated Compliance Guide](https://github.com/danielawurah/grc-security-policies/blob/main/STARTUPS-SMB/automated-compliance-guide.md) |
+| **Human Risk Management** | Security awareness programs, phishing mitigation, social engineering defense | [Awareness Training Policy](https://github.com/danielawurah/grc-security-policies/blob/main/GLOBAL-CONTROLS/awareness-training.md) |
+
+> Full repository → [danielawurah/grc-security-policies](https://github.com/danielawurah/grc-security-policies)
 
 ---
 
-## 04 · Certifications
+## 03 · Certifications
 
 **Earned**
 
-![MS-900](https://img.shields.io/badge/MS--900_Microsoft_365_Fundamentals-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-[![View](https://img.shields.io/badge/View_Certificate-lightgrey?style=flat-square)](https://learn.microsoft.com/en-us/users/evanyearwood-3556/credentials/bfe3633bbbcb1913)
+![CompTIA Security+](https://img.shields.io/badge/CompTIA_Security%2B-FF0000?style=flat-square&logo=comptia&logoColor=white)
 
-![Google Cyber](https://img.shields.io/badge/Google_Cybersecurity_Professional-4285F4?style=flat-square&logo=google&logoColor=white)
+![SailPoint](https://img.shields.io/badge/SailPoint_Certified_Identity_Security_Leader-003087?style=flat-square)
 
-![SBT](https://img.shields.io/badge/Security_Blue_Team_–_Network_Analysis-1b6ca8?style=flat-square)
+![Cybersecurity Ops](https://img.shields.io/badge/Cybersecurity_Risk_%26_Operations_Intensive_(10--Week)-555555?style=flat-square)
 
-![HTB](https://img.shields.io/badge/HackTheBox_–_Network_Traffic_Analysis-9FEF00?style=flat-square&logoColor=black)
+![Forage Tata](https://img.shields.io/badge/Cybersecurity_Analyst_Simulation_(Forage_%2F_Tata)-1d4289?style=flat-square)
 
-**In Progress**
+**In Progress / Queued**
 
-![AZ-900](https://img.shields.io/badge/AZ--900_Azure_Fundamentals-90%25-e3a008?style=flat-square&logo=microsoftazure&logoColor=white)
-
-**Queued**
-
-![AZ-800](https://img.shields.io/badge/AZ--800_Windows_Server_Hybrid_Admin-queued-888888?style=flat-square)
 ![SC-900](https://img.shields.io/badge/SC--900_Security_%26_Compliance-queued-888888?style=flat-square)
 ![SC-300](https://img.shields.io/badge/SC--300_Identity_%26_Access_Admin-queued-888888?style=flat-square)
 ![Okta Pro](https://img.shields.io/badge/Okta_Certified_Professional-queued-888888?style=flat-square)
-![Sec+](https://img.shields.io/badge/CompTIA_Security%2B-queued-888888?style=flat-square)
-![Postman](https://img.shields.io/badge/Postman_API_Fundamentals-queued-888888?style=flat-square)
+![AZ-900](https://img.shields.io/badge/AZ--900_Azure_Fundamentals-queued-888888?style=flat-square)
+
+---
+
+## 04 · Education
+
+<p>
+  <img src="https://img.shields.io/badge/B.Sc._Information_Technology-KNUST_%2F_GTUC-1B5E20?style=flat-square&logo=googlescholar&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Graduated-2020-555555?style=flat-square" />
+</p>
+
+**Kwame Nkrumah University of Science and Technology (KNUST)**
+Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp; 2016 – 2020
+
+| | |
+|---|---|
+| **Degree** | Bachelor of Science — Information Technology |
+| **Relevant Coursework** | Systems Design · Network Architecture · Database Management · Operating Systems · Information Security Fundamentals |
+| **Leadership** | President, Students' Representative Council (SRC) — led student governance, stakeholder engagement, and campus-wide initiatives |
+
+---
+
+## 05 · Supporting Technical Skills
+
+*Infrastructure and IT foundation that underpins IAM and security work.*
+
+![Windows Server](https://img.shields.io/badge/Windows_Server-0078D4?style=flat-square&logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux_%2F_cPanel-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Microsoft 365](https://img.shields.io/badge/Microsoft_365-D83B01?style=flat-square&logo=microsoftoffice&logoColor=white)
+![Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Cloud Security](https://img.shields.io/badge/Cloud_Security_Governance-0089D6?style=flat-square&logo=microsoftazure&logoColor=white)
+![DNS/DHCP](https://img.shields.io/badge/DNS_%2F_DHCP-555555?style=flat-square)
+![TCP/IP](https://img.shields.io/badge/TCP%2FIP_Networking-555555?style=flat-square)
+![VPS Hardening](https://img.shields.io/badge/VPS_Hardening-555555?style=flat-square)
+![Web Dev](https://img.shields.io/badge/Web_Development-555555?style=flat-square)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+---
+
+## 06 · IAM & GRC Project Work
+
+| Project | IAM / GRC Focus | Outcome |
+|---|---|---|
+| **Cyber GRC Consulting** (Multi-Client) | NIST CSF, ISO 27001, SOC 2 gap analysis · risk register development · TPRM · AI governance | Audit-ready GRC programs delivered across U.S. and African clients |
+| **ZeeHost — Identity & Infrastructure** | IAM model design · least privilege enforcement · account lifecycle · incident command | Secure multi-tenant hosting environment with enforced access controls |
+| **Zelus Technologies — AppSec & IAM** | AuthN/AuthZ architecture · OWASP Top 10 mitigation · SSDLC · vCISO advisory · Entra ID app registrations | Embedded identity and access controls into client SaaS products |
+| **Smart Campus — RBAC & Privacy by Design** | Granular RBAC for multi-role SaaS · SoD enforcement · PII data governance · Entra ID Conditional Access | Secure school management platform with compliant data handling |
+| **Imperial Communications — Risk Advisory** | Digital asset audits · credential theft prevention · Entra ID governance · cloud security policy | Hardened client digital footprint and reduced human risk exposure |
 
 ---
 
 <p align="center">
-  <a href="https://linkedin.com/in/evan-yearwood/">Connect on LinkedIn</a>
+  <a href="https://www.linkedin.com/in/daniel-awurah-09912b123/">Connect on LinkedIn</a>
 </p>
