@@ -30,7 +30,27 @@
 
 ## 01 · Identity & Access Management
 
-> *Primary focus area. Designing, implementing, and governing identity systems across hybrid and cloud environments.*
+| Workflow Project | Proof | Purpose | Stack | Status |
+|---|---|---|---|---|
+| **SAML Integration with Service Provider (Salesforce)** | Video & Screenshots | Pre-requisite lab establishing foundational SSO configuration before all proceeding identity labs. | Okta · SAML 2.0 · Salesforce | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Privileged Access Management (PAM) & Just-in-Time Access** | Screenshots & Video | Implements a JIT access workflow where elevated privileges are requested, approved, and automatically expired — eliminating standing access and reducing blast radius. | Okta · Entra ID · PIM · JIT · Approval Workflow | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Enterprise ABAC & Lifecycle Automation** | Video & Runbook | Demonstrates "Zero-Touch" provisioning using Attribute-Based Access Control (ABAC). Automates the full Joiner-Mover-Leaver (JML) lifecycle by mapping HR attributes to dynamic group memberships, ensuring Birthright Access is granted instantly and revoked automatically during role changes. | Okta · Active Directory · ABAC · SCIM · PowerShell | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Identity Governance & Segregation of Duties** | Audit Logs & Screenshots | Focuses on mitigating Privilege Creep and Insider Threat risks. Implements a Segregation of Duties (SoD) framework to prevent conflicting access (e.g., Requestor vs. Approver) and conducts a simulated Access Certification campaign to validate and prune elevated permissions per the Principle of Least Privilege. | Okta · SailPoint · Access Reviews · Audit Logs · CSV | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **REST API Automation & Bulk Identity Provisioning** | Postman Collections · JSON Payloads · Console Screenshots | Demonstrates programmatic identity lifecycle management using REST APIs. Uses Postman to execute bulk user creation, manipulate user attributes via HTTP methods (POST, PUT, PATCH), and leverage API response codes to troubleshoot failed provisioning cycles — bypassing the GUI for scalable operations. | Okta · Entra ID API · Postman · REST APIs · JSON · HTTP Methods | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Modern Protocol Mastery (OIDC + PKCE)** | Screenshots | Integrates a custom application (WordPress) using OIDC with PKCE — demonstrating secure authorization code flow without a client secret, suitable for public clients. | Okta · WordPress · OIDC · PKCE · OAuth 2.0 | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
+| **Ortoorg — Multi-Org Identity Federation** | Screenshots | Configures cross-organization identity federation, demonstrating how users from an external org can authenticate into a target environment without separate credentials. | Okta · Org2Org · Federation · SAML | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
+
+### Zero Trust Architecture & Secure Remote Access
+
+| Workflow Project | Proof | Purpose | Stack | Status |
+|---|---|---|---|---|
+| **Identity-Centric Zero Trust Network Access (ZTNA)** | Architecture Diagram & Screenshots | Eliminates the need for traditional VPNs by implementing a Cloudflare Tunnel to secure internal Active Directory resources. Enforces identity-verified, least-privilege access to internal apps without exposing them to the public internet. | AD · Cloudflare Zero Trust · ZTNA · Cloudflare Tunnel · MFA | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+
+---
+
+## 02 · IAM Skills & Capabilities
+
+> *Core technical knowledge underpinning all IAM work above.*
 
 | Capability | Detail |
 |---|---|
@@ -61,7 +81,7 @@
 
 ---
 
-## 02 · Governance, Risk & Compliance (GRC)
+## 03 · Governance, Risk & Compliance (GRC)
 
 > *Secondary focus area. Building risk programs that function as business enablers, not roadblocks.*
 
@@ -87,7 +107,7 @@
 
 ---
 
-## 03 · Certifications
+## 04 · Certifications
 
 **Earned**
 
@@ -108,7 +128,7 @@
 
 ---
 
-## 04 · Education
+## 05 · Education
 
 <p>
   <img src="https://img.shields.io/badge/B.Sc._Information_Technology-KNUST_%2F_GTUC-1B5E20?style=flat-square&logo=googlescholar&logoColor=white" />
@@ -127,7 +147,7 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 ---
 
-## 05 · Supporting Technical Skills
+## 06 · Supporting Technical Skills
 
 *Infrastructure and IT foundation that underpins IAM and security work.*
 
@@ -144,7 +164,7 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 ---
 
-## 06 · IAM & GRC Project Work
+## 07 · IAM & GRC Project Work
 
 | Project | IAM / GRC Focus | Outcome |
 |---|---|---|
@@ -153,28 +173,6 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 | **Zelus Technologies — AppSec & IAM** | AuthN/AuthZ architecture · OWASP Top 10 mitigation · SSDLC · vCISO advisory · Entra ID app registrations | Embedded identity and access controls into client SaaS products |
 | **Smart Campus — RBAC & Privacy by Design** | Granular RBAC for multi-role SaaS · SoD enforcement · PII data governance · Entra ID Conditional Access | Secure school management platform with compliant data handling |
 | **Imperial Communications — Risk Advisory** | Digital asset audits · credential theft prevention · Entra ID governance · cloud security policy | Hardened client digital footprint and reduced human risk exposure |
-
----
-
-## 01 · Identity & Access Management
-
-| Workflow Project | Proof | Purpose | Stack | Status |
-|---|---|---|---|---|
-| **SAML Integration with Service Provider (Salesforce)** | Video & Screenshots | Pre-requisite lab establishing foundational SSO configuration before all proceeding identity labs. | Okta · SAML 2.0 · Salesforce | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **Privileged Access Management (PAM) & Just-in-Time Access** | Screenshots & Video | Implements a JIT access workflow where elevated privileges are requested, approved, and automatically expired — eliminating standing access and reducing blast radius. | Okta · Entra ID · PIM · JIT · Approval Workflow | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **Enterprise ABAC & Lifecycle Automation** | Video & Runbook | Demonstrates "Zero-Touch" provisioning using Attribute-Based Access Control (ABAC). Automates the full Joiner-Mover-Leaver (JML) lifecycle by mapping HR attributes to dynamic group memberships, ensuring Birthright Access is granted instantly and revoked automatically during role changes. | Okta · Active Directory · ABAC · SCIM · PowerShell | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **Identity Governance & Segregation of Duties** | Audit Logs & Screenshots | Focuses on mitigating Privilege Creep and Insider Threat risks. Implements a Segregation of Duties (SoD) framework to prevent conflicting access (e.g., Requestor vs. Approver) and conducts a simulated Access Certification campaign to validate and prune elevated permissions per the Principle of Least Privilege. | Okta · SailPoint · Access Reviews · Audit Logs · CSV | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **REST API Automation & Bulk Identity Provisioning** | Postman Collections · JSON Payloads · Console Screenshots | Demonstrates programmatic identity lifecycle management using REST APIs. Uses Postman to execute bulk user creation, manipulate user attributes via HTTP methods (POST, PUT, PATCH), and leverage API response codes to troubleshoot failed provisioning cycles — bypassing the GUI for scalable operations. | Okta · Entra ID API · Postman · REST APIs · JSON · HTTP Methods | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **Modern Protocol Mastery (OIDC + PKCE)** | Screenshots | Integrates a custom application (WordPress) using OIDC with PKCE — demonstrating secure authorization code flow without a client secret, suitable for public clients. | Okta · WordPress · OIDC · PKCE · OAuth 2.0 | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
-| **Ortoorg — Multi-Org Identity Federation** | Screenshots | Configures cross-organization identity federation, demonstrating how users from an external org can authenticate into a target environment without separate credentials. | Okta · Org2Org · Federation · SAML | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
-
----
-
-### Zero Trust Architecture & Secure Remote Access
-
-| Workflow Project | Proof | Purpose | Stack | Status |
-|---|---|---|---|---|
-| **Identity-Centric Zero Trust Network Access (ZTNA)** | Architecture Diagram & Screenshots | Eliminates the need for traditional VPNs by implementing a Cloudflare Tunnel to secure internal Active Directory resources. Enforces identity-verified, least-privilege access to internal apps without exposing them to the public internet. | AD · Cloudflare Zero Trust · ZTNA · Cloudflare Tunnel · MFA | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
 
 ---
 
