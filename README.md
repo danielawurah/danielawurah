@@ -78,15 +78,36 @@
 
 ---
 
-## 03 · Certifications
+## 03 · AI/ML Security Engineering
+
+> Security work doesn't stop at human identities. This section covers AI-augmented security tooling and enterprise AI deployment — focused on **Non-Human Identity (NHI) governance**, workload security, and the safe internal adoption of large language models. These projects address the fastest-growing blind spot in enterprise IAM: machine identities and AI systems that operate outside traditional access controls.
+
+| Workflow Project | Proof | Purpose | Stack | Status |
+|---|---|---|---|---|
+| [**NHI-Sentinel — Non-Human Identity & Workload Auditor**](https://github.com/danielawurah/nhi-sentinel) | Discovery Report (PDF) · GitHub Repo · Before/After Privilege Comparison | Automates the discovery and lifecycle auditing of service accounts, bots, and API keys to eliminate **Shadow Identities** and orphaned credentials across cloud and SaaS environments. | Python · Microsoft Graph API · Okta API · TruffleHog · PostgreSQL | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| [**Locally Hosted AI for Enterprise (Air-Gapped LLM)**](https://github.com/danielawurah/locally-hosted-ai) | Screenshots · Architecture Diagram | Deploys and governs a self-hosted large language model for internal enterprise use — keeping sensitive data off public AI endpoints, enforcing access controls, and establishing AI usage policy. | Ollama · Hugging Face · Local inference · AI Governance Policy | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+
+**AI/ML Security Stack**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Microsoft Graph API](https://img.shields.io/badge/Microsoft_Graph_API-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Okta API](https://img.shields.io/badge/Okta_API-007DC1?style=flat-square&logo=okta&logoColor=white)
+![TruffleHog](https://img.shields.io/badge/TruffleHog-555555?style=flat-square)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+
+---
+
+## 04 · Certifications
 
 **Earned**
 
-![CompTIA Security+](https://img.shields.io/badge/CompTIA_Security%2B-FF0000?style=flat-square&logo=comptia&logoColor=white)
+[![CompTIA Security+](https://img.shields.io/badge/CompTIA_Security%2B-FF0000?style=flat-square&logo=comptia&logoColor=white)](https://www.credly.com/badges/42584e92-f679-489d-a4f8-c65363245bc7)
 
 ![SailPoint](https://img.shields.io/badge/SailPoint_Certified_Identity_Security_Leader-003087?style=flat-square)
 
-![Cybersecurity Ops](https://img.shields.io/badge/Cybersecurity_Risk_%26_Operations_Intensive_(10--Week)-555555?style=flat-square)
+[![GRC Master Program](https://img.shields.io/badge/GRC_Master_Program-BetterCyberCareer_Challenge-555555?style=flat-square)](https://app.kajabi.com/certificates/fdadb476)
 
 ![Forage Tata](https://img.shields.io/badge/Cybersecurity_Analyst_Simulation_(Forage_%2F_Tata)-1d4289?style=flat-square)
 
@@ -99,7 +120,7 @@
 
 ---
 
-## 04 · Education
+## 05 · Education
 
 <p>
   <img src="https://img.shields.io/badge/B.Sc._Information_Technology-KNUST_%2F_GTUC-1B5E20?style=flat-square&logo=googlescholar&logoColor=white" />
@@ -118,7 +139,7 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 ---
 
-## 05 · Supporting Technical Skills
+## 06 · Supporting Technical Skills
 
 *Infrastructure and IT foundation that underpins IAM and security work.*
 
@@ -135,7 +156,7 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 ---
 
-## 06 · IAM & GRC Project Work
+## 07 · IAM & GRC Project Work
 
 | Project | IAM / GRC Focus | Outcome |
 |---|---|---|
