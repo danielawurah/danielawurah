@@ -22,13 +22,11 @@
 
 > **Portfolio Note**
 >
-> The projects in this portfolio are intentionally designed to simulate the real workflows of an **Identity & Access Management (IAM) and GRC professional working in enterprise environments**.
+> This portfolio simulates the real workflows of an **IAM and GRC professional in enterprise environments** — covering identity lifecycle automation, access governance, privileged access management, and integration across **Active Directory, Okta, Microsoft Entra ID, and Cloudflare Zero Trust**.
 >
-> Each project focuses on practical security tasks such as identity lifecycle automation, access governance, privileged access management, risk program design, and integration between systems like **Active Directory, Okta, Microsoft Entra ID, and Cloudflare Zero Trust**. The GRC work covers framework implementation, policy development, third-party risk, and compliance advisory across real industry sectors.
+> The GRC work spans framework implementation (NIST CSF, ISO 27001, SOC 2), policy development, and compliance advisory across Healthcare, Fintech, and Technology. It also extends into **AI/ML Security Engineering** — governing Non-Human Identities and securing enterprise AI deployments.
 >
-> The portfolio also extends into **AI/ML Security Engineering** — covering the governance of Non-Human Identities (service accounts, bots, and API keys that live outside traditional access reviews), and the secure enterprise deployment of locally hosted AI models to eliminate the data privacy risks of public AI endpoints.
->
-> The goal is to demonstrate **how an IAM and GRC practitioner designs, governs, and operationalises identity and risk programs at scale** — using industry platforms, recognised frameworks, and security best practices to enforce consistent access control and compliance across hybrid and AI-enabled environments.
+> Every project below has proof attached. The goal is simple: demonstrate what I can actually build and operate.
 
 ---
 
