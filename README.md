@@ -62,9 +62,7 @@
 
 ## 02 · Governance, Risk & Compliance (GRC)
 
-> I approach GRC as a practical discipline — not a checkbox exercise. My focus is on building risk programs that are aligned to recognised frameworks (**NIST CSF, ISO 27001, SOC 2**) and actually usable by the organisations they serve. This means conducting honest gap analyses, building dynamic risk registers, and translating control requirements into clear documentation that holds up under audit.
->
-> On the operational side I manage **third-party and supply chain risk**, own the full policy lifecycle from drafting to review, and have delivered compliance advisory across **Healthcare, Fintech, Retail, and Technology** sectors. I also integrate **AI governance** into risk programs — building controls for responsible AI adoption and RAG-based automation — and I treat **human risk** (phishing, social engineering, security culture) as a first-class GRC concern, not an afterthought.
+> My GRC work is grounded in self-directed study and hands-on portfolio projects built around **NIST CSF, ISO 27001, and SOC 2**. I have worked through gap analysis processes, built risk register templates, and developed policy documentation structured for real audit scenarios. I have researched and documented **third-party and supply chain risk** processes, and applied compliance thinking across Healthcare, Fintech, Retail, and Technology contexts. I have also explored **AI governance** as an emerging GRC discipline and treat **human risk** — phishing, social engineering, security culture — as a core part of any risk program. The work below reflects what I understand, what I have built, and where I am headed.
 
 | Capability | Detail | Proof |
 |---|---|---|
@@ -76,7 +74,10 @@
 | **AI Governance** | Responsible AI controls, RAG system risk management, AI automation policy | [Automated Compliance Guide](https://github.com/danielawurah/grc-security-policies/blob/main/STARTUPS-SMB/automated-compliance-guide.md) |
 | **Human Risk Management** | Security awareness programs, phishing mitigation, social engineering defense | [Awareness Training Policy](https://github.com/danielawurah/grc-security-policies/blob/main/GLOBAL-CONTROLS/awareness-training.md) |
 
-> Full repository → [danielawurah/grc-security-policies](https://github.com/danielawurah/grc-security-policies) &nbsp;·&nbsp; GRC Thought Leadership → [The GRC Report](https://thegrcreport.com/)
+> Full repository → [danielawurah/grc-security-policies](https://github.com/danielawurah/grc-security-policies)
+
+> **Published Writing**
+> I also write publicly on GRC topics — covering regulatory changes, compliance strategy, and risk management for practitioners and business leaders. Published on [**The GRC Report**](https://thegrcreport.com/).
 
 ---
 
