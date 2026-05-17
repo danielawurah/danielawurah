@@ -76,7 +76,7 @@
 | **AI Governance** | Responsible AI controls, RAG system risk management, AI automation policy | [Automated Compliance Guide](https://github.com/danielawurah/grc-security-policies/blob/main/STARTUPS-SMB/automated-compliance-guide.md) |
 | **Human Risk Management** | Security awareness programs, phishing mitigation, social engineering defense | [Awareness Training Policy](https://github.com/danielawurah/grc-security-policies/blob/main/GLOBAL-CONTROLS/awareness-training.md) |
 
-> Full repository → [danielawurah/grc-security-policies](https://github.com/danielawurah/grc-security-policies)
+> Full repository → [danielawurah/grc-security-policies](https://github.com/danielawurah/grc-security-policies) &nbsp;·&nbsp; GRC Thought Leadership → [The GRC Report](https://thegrcreport.com/)
 
 ---
 
