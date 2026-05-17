@@ -20,11 +20,15 @@
 
 ---
 
-> **About**
+> **Portfolio Note**
 >
-> IAM and GRC professional specializing in **enterprise identity architecture** — designing and governing access controls across **Active Directory, Okta, Microsoft Entra ID, and Cloudflare Zero Trust**. I build identity programs that enforce least privilege, automate the JML lifecycle, and align access governance to frameworks like **NIST CSF, ISO 27001, and SOC 2**.
+> The projects in this portfolio are intentionally designed to simulate the real workflows of an **Identity & Access Management (IAM) and GRC professional working in enterprise environments**.
 >
-> Currently building out a hands-on IAM homelab portfolio to document real-world configurations in Active Directory, Okta, and Entra ID. Open to entry-level and mid-level IAM and GRC roles where I can contribute, keep learning, and grow within a team.
+> Each project focuses on practical security tasks such as identity lifecycle automation, access governance, privileged access management, risk program design, and integration between systems like **Active Directory, Okta, Microsoft Entra ID, and Cloudflare Zero Trust**. The GRC work covers framework implementation, policy development, third-party risk, and compliance advisory across real industry sectors.
+>
+> The portfolio also extends into **AI/ML Security Engineering** — covering the governance of Non-Human Identities (service accounts, bots, and API keys that live outside traditional access reviews), and the secure enterprise deployment of locally hosted AI models to eliminate the data privacy risks of public AI endpoints.
+>
+> The goal is to demonstrate **how an IAM and GRC practitioner designs, governs, and operationalises identity and risk programs at scale** — using industry platforms, recognised frameworks, and security best practices to enforce consistent access control and compliance across hybrid and AI-enabled environments.
 
 ---
 
