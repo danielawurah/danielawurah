@@ -22,11 +22,11 @@
 
 > **Portfolio Note**
 >
-> This portfolio simulates the real workflows of an **IAM and GRC professional in enterprise environments** — covering identity lifecycle automation, access governance, privileged access management, and integration across **Active Directory, Okta, Microsoft Entra ID, and Cloudflare Zero Trust**.
+> This portfolio simulates the real workflows of an **IAM and GRC professional in enterprise environments**, covering identity lifecycle automation, access governance, privileged access management, and integration across **Active Directory, Okta, Microsoft Entra ID, and Cloudflare Zero Trust**.
 >
-> The GRC work spans framework implementation (NIST CSF, ISO 27001, SOC 2), policy development, and compliance advisory across Healthcare, Fintech, and Technology. It also extends into **AI/ML Security Engineering** — governing Non-Human Identities and securing enterprise AI deployments.
+> The GRC work spans framework implementation (NIST CSF, ISO 27001, SOC 2), policy development, and compliance advisory across Healthcare, Fintech, and Technology. It also extends into **AI/ML Security Engineering**, covering Non-Human Identity governance and securing enterprise AI deployments.
 >
-> Every project below has proof attached. The goal is simple: demonstrate what I can actually build and operate.
+> Every project below has proof attached.
 
 ---
 
