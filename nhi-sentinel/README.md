@@ -1,4 +1,4 @@
-<h1 align="center">NHI-Sentinel — Non-Human Identity & Workload Auditor</h1>
+<h1 align="center">NHI-Sentinel: Non-Human Identity & Workload Auditor</h1>
 
 <p align="center">
   <em>Python · Microsoft Graph API · Okta API · TruffleHog · PostgreSQL</em>
@@ -8,24 +8,24 @@
 
 ## Project Overview
 
-Most IAM programs focus entirely on human users — but **Non-Human Identities (NHI)** such as service accounts, API keys, bots, and automation credentials are often the largest and least-governed identity population in any enterprise. They don't log in via MFA, they don't get offboarded when a project ends, and they rarely appear in access reviews.
+Most IAM programs focus entirely on human users, but **Non-Human Identities (NHI)** such as service accounts, API keys, bots, and automation credentials are often the largest and least-governed identity population in any enterprise. They don't log in via MFA, they don't get offboarded when a project ends, and they rarely appear in access reviews.
 
-**NHI-Sentinel** is an automated auditing tool that discovers, inventories, and continuously monitors non-human identities across cloud and SaaS environments. It surfaces **Shadow Identities** (credentials that exist but aren't tracked), orphaned service accounts, and overprivileged API keys — then produces a structured discovery report with before/after privilege comparisons to support remediation.
+**NHI-Sentinel** is an automated auditing tool that discovers, inventories, and continuously monitors non-human identities across cloud and SaaS environments. It surfaces **Shadow Identities** (credentials that exist but aren't tracked), orphaned service accounts, and overprivileged API keys, then produces a structured discovery report with before/after privilege comparisons to support remediation.
 
 ---
 
 ## Screenshots
 
-> *(Screenshots folder — see repo files above)*
+> *(Screenshots folder, see repo files above)*
 
 | Screenshot | Description |
 |---|---|
-| `discovery-report.png` | Full NHI discovery report output — service accounts, API keys, bots catalogued |
-| `shadow-identities-flagged.png` | Shadow Identities surfaced — credentials with no owner record |
+| `discovery-report.png` | Full NHI discovery report output, service accounts, API keys and bots catalogued |
+| `shadow-identities-flagged.png` | Shadow Identities surfaced, credentials with no owner record |
 | `orphaned-accounts.png` | Orphaned service accounts identified after project decommission |
 | `before-after-privilege.png` | Before/After privilege comparison following remediation |
-| `okta-api-scan.png` | Okta API token scan results — unused and overprivileged tokens |
-| `graph-api-output.png` | Microsoft Graph API output — Azure service principal audit |
+| `okta-api-scan.png` | Okta API token scan results, unused and overprivileged tokens |
+| `graph-api-output.png` | Microsoft Graph API output, Azure service principal audit |
 | `trufflehog-secrets.png` | TruffleHog scan detecting exposed secrets in repos/configs |
 
 ---
@@ -87,7 +87,7 @@ Enterprise Identity Population
 ### Privilege Analysis
 - Pulled scope assignments for every Okta API token and Azure service principal
 - Compared actual permissions used (last 90 days) against permissions granted
-- Generated **Before/After privilege comparison** — documenting over-permission and recommended least-privilege scope
+- Generated **Before/After privilege comparison**, documenting over-permission and recommended least-privilege scope
 
 ### Reporting & Remediation Support
 - Produced a structured **Discovery Report (PDF)** with full NHI inventory, risk ratings, and remediation steps
@@ -98,12 +98,12 @@ Enterprise Identity Population
 
 ## Key Concepts Demonstrated
 
-- **Non-Human Identity (NHI) Governance** — Applying IAM principles (least privilege, lifecycle, access reviews) to machine identities
-- **Shadow Identity Detection** — Surfacing credentials that exist in systems but are absent from any official inventory
-- **Secret Scanning** — Identifying exposed credentials in codebases before they are exploited
-- **Cross-Platform Enumeration** — Querying both Okta and Entra ID APIs to build a unified NHI inventory
-- **Privilege Right-Sizing** — Comparing permissions granted vs. permissions used to reduce standing access
-- **Audit Trail & Reporting** — Structured PDF output suitable for GRC audit evidence
+- **Non-Human Identity (NHI) Governance**: Applying IAM principles (least privilege, lifecycle, access reviews) to machine identities
+- **Shadow Identity Detection**: Surfacing credentials that exist in systems but are absent from any official inventory
+- **Secret Scanning**: Identifying exposed credentials in codebases before they are exploited
+- **Cross-Platform Enumeration**: Querying both Okta and Entra ID APIs to build a unified NHI inventory
+- **Privilege Right-Sizing**: Comparing permissions granted vs. permissions used to reduce standing access
+- **Audit Trail & Reporting**: Structured PDF output suitable for GRC audit evidence
 
 ---
 

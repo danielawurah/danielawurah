@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-Most enterprises are adopting AI tools — but sending internal data to public AI endpoints (ChatGPT, Claude, Gemini) creates significant **data privacy, compliance, and IP leakage risks**. This project demonstrates how to deploy a **self-hosted, air-gapped Large Language Model (LLM)** for internal enterprise use, keeping all data on-premises while enforcing identity-based access controls and a documented AI governance policy.
+Most enterprises are adopting AI tools, but sending internal data to public AI endpoints (ChatGPT, Claude, Gemini) creates significant **data privacy, compliance, and IP leakage risks**. This project demonstrates how to deploy a **self-hosted, air-gapped Large Language Model (LLM)** for internal enterprise use, keeping all data on-premises while enforcing identity-based access controls and a documented AI governance policy.
 
 The goal is to give a security-conscious organisation the productivity benefits of AI without the risk of confidential data leaving the network.
 
@@ -16,16 +16,16 @@ The goal is to give a security-conscious organisation the productivity benefits 
 
 ## Screenshots
 
-> *(Screenshots folder — see repo files above)*
+> *(Screenshots folder, see repo files above)*
 
 | Screenshot | Description |
 |---|---|
-| `ollama-running.png` | Ollama server running locally — model loaded and responding |
+| `ollama-running.png` | Ollama server running locally, model loaded and responding |
 | `model-inference.png` | Local LLM responding to internal enterprise query |
 | `access-control-config.png` | Identity-based access controls restricting who can query the model |
 | `network-isolation.png` | Network configuration confirming no external AI API calls |
 | `ai-governance-policy.png` | AI usage and governance policy document |
-| `architecture-diagram.png` | Full architecture — local inference stack with access controls |
+| `architecture-diagram.png` | Full architecture showing local inference stack with access controls |
 
 ---
 
@@ -36,8 +36,8 @@ The goal is to give a security-conscious organisation the productivity benefits 
 | **Inference Engine** | Ollama |
 | **Model Source** | Hugging Face (self-hosted weights) |
 | **Deployment** | Local server / on-premises VM |
-| **Access Control** | Identity-based access — restricted to authorised internal users |
-| **Network** | Air-gapped — no outbound calls to public AI endpoints |
+| **Access Control** | Identity-based access, restricted to authorised internal users |
+| **Network** | Air-gapped, no outbound calls to public AI endpoints |
 | **Governance** | AI Usage Policy · Acceptable Use Guidelines · Risk Controls |
 
 ---
@@ -79,17 +79,17 @@ Employee → Local LLM (Ollama on-prem)
 ### Local LLM Deployment (Ollama)
 - Installed and configured **Ollama** on a local server/VM
 - Pulled and hosted open-source model weights from **Hugging Face**
-- Validated model inference entirely on local hardware — no outbound network calls to any public AI API
+- Validated model inference entirely on local hardware, no outbound network calls to any public AI API
 - Tested response quality and latency for internal enterprise use cases (document summarisation, policy Q&A, report drafting)
 
 ### Identity-Based Access Controls
-- Restricted access to the local AI endpoint — only authorised internal users can query the model
+- Restricted access to the local AI endpoint, only authorised internal users can query the model
 - Documented access tiers: who can use the model, what data types are permitted, and what use cases are approved
 - Applied least-privilege principles to the AI system consistent with the organisation's broader IAM framework
 
 ### Network Isolation
 - Configured the deployment environment to prevent outbound connections to external AI APIs
-- Validated air-gap with network traffic monitoring — confirmed all inference stays local
+- Validated air-gap with network traffic monitoring, confirmed all inference stays local
 
 ### AI Governance Policy
 - Drafted an **AI Usage Policy** covering:
@@ -103,11 +103,11 @@ Employee → Local LLM (Ollama on-prem)
 
 ## Key Concepts Demonstrated
 
-- **Enterprise AI Risk Management** — Identifying and controlling the data privacy and compliance risks of AI adoption
-- **Air-Gapped Deployment** — Running AI inference with zero dependency on external cloud APIs
-- **AI Governance** — Building policy, controls, and guardrails for responsible AI adoption
-- **Identity-Controlled AI Access** — Applying IAM principles to AI system access — who can use it, what they can do, and what's logged
-- **Compliance Alignment** — Structuring AI deployment to support HIPAA, SOC 2, GDPR, and internal data classification requirements
+- **Enterprise AI Risk Management**: Identifying and controlling the data privacy and compliance risks of AI adoption
+- **Air-Gapped Deployment**: Running AI inference with zero dependency on external cloud APIs
+- **AI Governance**: Building policy, controls, and guardrails for responsible AI adoption
+- **Identity-Controlled AI Access**: Applying IAM principles to AI system access, covering who can use it, what they can do, and what is logged
+- **Compliance Alignment**: Structuring AI deployment to support HIPAA, SOC 2, GDPR, and internal data classification requirements
 
 ---
 
