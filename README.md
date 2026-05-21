@@ -34,14 +34,14 @@
 
 | Workflow Project | Proof | Purpose | Stack | Status |
 |---|---|---|---|---|
-| [**Enterprise ABAC & Lifecycle Automation**](https://github.com/danielawurah/abac-lifecycle-automation) | Video & Runbook | Zero-Touch JML automation — maps HR attributes to dynamic group memberships for automatic Birthright Access provisioning and revocation. | Okta · AD · ABAC · SCIM · PowerShell | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| [**Enterprise ABAC & Lifecycle Automation**](https://github.com/danielawurah/abac-lifecycle-automation) | Video & Runbook | Zero-Touch JML automation that maps HR attributes to dynamic group memberships for automatic Birthright Access provisioning and revocation. | Okta · AD · ABAC · SCIM · PowerShell | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
 | **Identity Governance & Segregation of Duties** | Audit Logs & Screenshots | Mitigates Privilege Creep and Insider Threat via SoD enforcement and simulated Access Certification campaign aligned to Least Privilege. | Okta · SailPoint · Access Reviews · Audit Logs | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **Privileged Access Management (PAM) & Just-in-Time Access** | Screenshots & Video | JIT access workflow — elevated privileges requested, approved, and auto-expired, eliminating standing access and reducing blast radius. | Okta · Entra ID · PIM · JIT · Approval Workflow | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Identity-Centric Zero Trust Network Access (ZTNA)**](https://github.com/danielawurah/zero-trust-ztna) | Architecture Diagram & Screenshots | Replaces traditional VPN with Cloudflare Tunnel — enforces identity-verified, least-privilege access to internal AD resources without public internet exposure. | AD · Cloudflare Zero Trust · ZTNA · Cloudflare Tunnel · MFA | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**REST API Automation & Bulk Identity Provisioning**](https://github.com/danielawurah/bulk-identity-provisioning) | Postman Collections · JSON · Console Screenshots | Programmatic identity lifecycle management via REST APIs — bulk user creation, attribute manipulation, and failed provisioning troubleshooting at scale. | Okta · Entra ID API · Postman · REST · JSON | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**SAML Integration with Service Provider (Salesforce)**](https://github.com/danielawurah/saml-okta-salesforce) | Video & Screenshots | Foundational SSO configuration using SAML 2.0 — establishes identity federation between Okta and a third-party SaaS application. | Okta · SAML 2.0 · Salesforce | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| **Modern Protocol Mastery (OIDC + PKCE)** | Screenshots | Integrates a custom app (WordPress) using OIDC + PKCE — secure auth code flow without a client secret for public clients. | Okta · WordPress · OIDC · PKCE · OAuth 2.0 | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
-| **Ortoorg — Multi-Org Identity Federation** | Screenshots | Cross-org identity federation — external users authenticate into a target environment without separate credentials. | Okta · Org2Org · Federation · SAML | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
+| **Privileged Access Management (PAM) & Just-in-Time Access** | Screenshots & Video | JIT access workflow where elevated privileges are requested, approved and auto-expired, eliminating standing access and reducing blast radius. | Okta · Entra ID · PIM · JIT · Approval Workflow | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| [**Identity-Centric Zero Trust Network Access (ZTNA)**](https://github.com/danielawurah/zero-trust-ztna) | Architecture Diagram & Screenshots | Replaces traditional VPN with Cloudflare Tunnel to enforce identity-verified, least-privilege access to internal AD resources without public internet exposure. | AD · Cloudflare Zero Trust · ZTNA · Cloudflare Tunnel · MFA | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| [**REST API Automation & Bulk Identity Provisioning**](https://github.com/danielawurah/bulk-identity-provisioning) | Postman Collections · JSON · Console Screenshots | Programmatic identity lifecycle management via REST APIs, covering bulk user creation, attribute manipulation and failed provisioning troubleshooting at scale. | Okta · Entra ID API · Postman · REST · JSON | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| [**SAML Integration with Service Provider (Salesforce)**](https://github.com/danielawurah/saml-okta-salesforce) | Video & Screenshots | Foundational SSO configuration using SAML 2.0 that establishes identity federation between Okta and a third-party SaaS application. | Okta · SAML 2.0 · Salesforce | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| **Modern Protocol Mastery (OIDC + PKCE)** | Screenshots | Integrates a custom app (WordPress) using OIDC + PKCE, a secure auth code flow without a client secret for public clients. | Okta · WordPress · OIDC · PKCE · OAuth 2.0 | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
+| **Ortoorg: Multi-Org Identity Federation** | Screenshots | Cross-org identity federation where external users authenticate into a target environment without separate credentials. | Okta · Org2Org · Federation · SAML | ![Queued](https://img.shields.io/badge/Queued-888888?style=flat-square) |
 
 **IAM Tech Stack**
 
@@ -62,11 +62,11 @@
 
 ## 02 · Governance, Risk & Compliance (GRC)
 
-> My GRC work is grounded in self-directed study and hands-on portfolio projects built around **NIST CSF, ISO 27001, and SOC 2**. I have worked through gap analysis processes, built risk register templates, and developed policy documentation structured for real audit scenarios. I have researched and documented **third-party and supply chain risk** processes, and applied compliance thinking across Healthcare, Fintech, Retail, and Technology contexts. I have also explored **AI governance** as an emerging GRC discipline and treat **human risk** — phishing, social engineering, security culture — as a core part of any risk program. The work below reflects what I understand, what I have built, and where I am headed.
+> My GRC work is grounded in self-directed study and hands-on portfolio projects built around **NIST CSF, ISO 27001, and SOC 2**. I have worked through gap analysis processes, built risk register templates, and developed policy documentation structured for real audit scenarios. I have researched and documented **third-party and supply chain risk** processes, and applied compliance thinking across Healthcare, Fintech, Retail, and Technology contexts. I have also explored **AI governance** as an emerging GRC discipline and treat **human risk** (phishing, social engineering, security culture) as a core part of any risk program. The work below reflects what I understand, what I have built, and where I am headed.
 
 | Capability | Detail | Proof |
 |---|---|---|
-| **Framework Implementation** | NIST CSF, ISO 27001, SOC 2 — gap analysis, control mapping, audit readiness | [Controls Mapping](https://github.com/danielawurah/grc-security-policies/tree/main/CONTROLS-MAPPING) |
+| **Framework Implementation** | NIST CSF, ISO 27001, SOC 2 covering gap analysis, control mapping and audit readiness | [Controls Mapping](https://github.com/danielawurah/grc-security-policies/tree/main/CONTROLS-MAPPING) |
 | **Risk Operations** | Enterprise risk assessments, risk quantification, dynamic risk register management | [Risk Assessment Template](https://github.com/danielawurah/grc-security-policies/blob/main/TEMPLATES/risk-assessment-template.xlsx) |
 | **Third-Party Risk (TPRM)** | Vendor security reviews, supply chain governance, procurement collaboration | [Exception Request Form](https://github.com/danielawurah/grc-security-policies/blob/main/TEMPLATES/exception-request-form.md) |
 | **Policy Lifecycle** | End-to-end security policy development, documentation standards, governance processes | [Global Controls](https://github.com/danielawurah/grc-security-policies/tree/main/GLOBAL-CONTROLS) |
@@ -77,18 +77,18 @@
 > Full repository → [danielawurah/grc-security-policies](https://github.com/danielawurah/grc-security-policies)
 
 > **Published Writing**
-> I also write publicly on GRC topics — covering regulatory changes, compliance strategy, and risk management for practitioners and business leaders. Published on [**The GRC Report**](https://thegrcreport.com/).
+> I also write publicly on GRC topics, covering regulatory changes, compliance strategy, and risk management for practitioners and business leaders. Published on [**The GRC Report**](https://thegrcreport.com/).
 
 ---
 
 ## 03 · AI/ML Security Engineering
 
-> Security work doesn't stop at human identities. This section covers AI-augmented security tooling and enterprise AI deployment — focused on **Non-Human Identity (NHI) governance**, workload security, and the safe internal adoption of large language models. These projects address the fastest-growing blind spot in enterprise IAM: machine identities and AI systems that operate outside traditional access controls.
+> Security work doesn't stop at human identities. This section covers AI-augmented security tooling and enterprise AI deployment, focused on **Non-Human Identity (NHI) governance**, workload security, and the safe internal adoption of large language models. These projects address the fastest-growing blind spot in enterprise IAM: machine identities and AI systems that operate outside traditional access controls.
 
 | Workflow Project | Proof | Purpose | Stack | Status |
 |---|---|---|---|---|
-| [**NHI-Sentinel — Non-Human Identity & Workload Auditor**](https://github.com/danielawurah/nhi-sentinel) | Discovery Report (PDF) · GitHub Repo · Before/After Privilege Comparison | Automates the discovery and lifecycle auditing of service accounts, bots, and API keys to eliminate **Shadow Identities** and orphaned credentials across cloud and SaaS environments. | Python · Microsoft Graph API · Okta API · TruffleHog · PostgreSQL | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
-| [**Locally Hosted AI for Enterprise (Air-Gapped LLM)**](https://github.com/danielawurah/locally-hosted-ai) | Screenshots · Architecture Diagram | Deploys and governs a self-hosted large language model for internal enterprise use — keeping sensitive data off public AI endpoints, enforcing access controls, and establishing AI usage policy. | Ollama · Hugging Face · Local inference · AI Governance Policy | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| [**NHI-Sentinel: Non-Human Identity & Workload Auditor**](https://github.com/danielawurah/nhi-sentinel) | Discovery Report (PDF) · GitHub Repo · Before/After Privilege Comparison | Automates the discovery and lifecycle auditing of service accounts, bots, and API keys to eliminate **Shadow Identities** and orphaned credentials across cloud and SaaS environments. | Python · Microsoft Graph API · Okta API · TruffleHog · PostgreSQL | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
+| [**Locally Hosted AI for Enterprise (Air-Gapped LLM)**](https://github.com/danielawurah/locally-hosted-ai) | Screenshots · Architecture Diagram | Deploys and governs a self-hosted large language model for internal enterprise use, keeping sensitive data off public AI endpoints, enforcing access controls and establishing AI usage policy. | Ollama · Hugging Face · Local inference · AI Governance Policy | ![Complete](https://img.shields.io/badge/Complete-2ea44f?style=flat-square) |
 
 **AI/ML Security Stack**
 
@@ -136,9 +136,9 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 | | |
 |---|---|
-| **Degree** | Bachelor of Science — Information Technology |
+| **Degree** | Bachelor of Science in Information Technology |
 | **Relevant Coursework** | Systems Design · Network Architecture · Database Management · Operating Systems · Information Security Fundamentals |
-| **Leadership** | President, Students' Representative Council (SRC) — led student governance, stakeholder engagement, and campus-wide initiatives |
+| **Leadership** | President, Students' Representative Council (SRC), led student governance, stakeholder engagement and campus-wide initiatives |
 
 ---
 
@@ -164,10 +164,10 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 | Project | IAM / GRC Focus | Outcome |
 |---|---|---|
 | **Cyber GRC Consulting** (Multi-Client) | NIST CSF, ISO 27001, SOC 2 gap analysis · risk register development · TPRM · AI governance | Audit-ready GRC programs delivered across U.S. and African clients |
-| **ZeeHost — Identity & Infrastructure** | IAM model design · least privilege enforcement · account lifecycle · incident command | Secure multi-tenant hosting environment with enforced access controls |
-| **Zelus Technologies — AppSec & IAM** | AuthN/AuthZ architecture · OWASP Top 10 mitigation · SSDLC · vCISO advisory · Entra ID app registrations | Embedded identity and access controls into client SaaS products |
-| **Smart Campus — RBAC & Privacy by Design** | Granular RBAC for multi-role SaaS · SoD enforcement · PII data governance · Entra ID Conditional Access | Secure school management platform with compliant data handling |
-| **Imperial Communications — Risk Advisory** | Digital asset audits · credential theft prevention · Entra ID governance · cloud security policy | Hardened client digital footprint and reduced human risk exposure |
+| **ZeeHost: Identity & Infrastructure** | IAM model design · least privilege enforcement · account lifecycle · incident command | Secure multi-tenant hosting environment with enforced access controls |
+| **Zelus Technologies: AppSec & IAM** | AuthN/AuthZ architecture · OWASP Top 10 mitigation · SSDLC · vCISO advisory · Entra ID app registrations | Embedded identity and access controls into client SaaS products |
+| **Smart Campus: RBAC & Privacy by Design** | Granular RBAC for multi-role SaaS · SoD enforcement · PII data governance · Entra ID Conditional Access | Secure school management platform with compliant data handling |
+| **Imperial Communications: Risk Advisory** | Digital asset audits · credential theft prevention · Entra ID governance · cloud security policy | Hardened client digital footprint and reduced human risk exposure |
 
 ---
 
