@@ -18,20 +18,53 @@ This is the **identity lifecycle backbone** that underpins every other IAM proje
 
 ## Screenshots
 
-> *(Upload your screenshots to this folder and they will render below)*
+---
 
-| Screenshot | Description |
-|---|---|
-| `01-ad-user-attributes.png` | AD user with department, title, and location attributes populated |
-| `02-okta-ad-agent-sync.png` | Okta AD Agent running, users and attributes syncing from AD |
-| `03-okta-group-rule-config.png` | ABAC group rule configured in Okta, expression matching on user attributes |
-| `04-group-rule-active.png` | Group rule status active, users automatically placed into group |
-| `05-birthright-app-assignment.png` | Application auto-assigned to user via group membership, no manual action needed |
-| `06-mover-attribute-change.png` | AD attribute updated (department change), triggering group recalculation |
-| `07-mover-access-updated.png` | User removed from old group, added to new group, apps updated automatically |
-| `08-leaver-account-disabled.png` | AD account disabled, Okta session terminated and all app access revoked |
-| `09-scim-provisioning-log.png` | SCIM provisioning log showing downstream app receiving the lifecycle event |
-| `10-audit-trail.png` | Okta System Log showing full audit trail of provisioning and deprovisioning events |
+### Step 1 — Setting the Source Attribute in Active Directory
+> The `Department` field for James Markins is set to `IT` in Active Directory Users and Computers. This single attribute is the upstream trigger for the entire automated access chain — without it, the ABAC rule cannot match and no access is granted.
+
+![Active Directory Organization tab with Department field set to IT for James Markins](<./ABAC/Screenshot 2026-05-18 152350.png>)
+
+---
+
+### Step 2 — ABAC Rule Configured but Not Yet Matching
+> The Okta Group Rule `IT Department Rule` is fully configured: IF `department | string` Equals `IT` THEN assign to `Okta-Dynamic-IT`. The Preview test against James Markins returns a **red "User doesn't match rule"** banner — because the AD attribute had not yet synced to Okta at this point.
+>
+> This is the critical insight: the rule logic was correct from the start. The failure was a data problem — no attribute in AD meant no access in Okta.
+
+![Okta Add Rule dialog showing red User doesn't match rule banner for James Markins](<./ABAC/Screenshot 2026-05-18 151711.png>)
+
+---
+
+### Step 3 — Rule Validated After Attribute Sync
+> After the `Department = IT` attribute was set in AD (Step 1) and the Okta AD Agent completed its sync cycle, the same Preview test now shows a **green "User matches rule"** banner. The rule did not change — only the underlying data did.
+>
+> This proves the ABAC engine responds automatically to attribute state, not to manual assignment.
+
+![Okta Edit Rule dialog showing green User matches rule banner after AD sync for James Markins](<./ABAC/Screenshot 2026-05-18 153517.png>)
+
+---
+
+### Step 4 — SCIM App Assigned to Group, Not to Individuals
+> The Target SaaS App (SCIM Lab) Assignments tab shows a single entry: the `Okta-Dynamic-IT` group at Priority 1. No individual users are assigned. Any user who enters this group via the ABAC rule automatically receives this application through SCIM provisioning — no admin action required.
+
+![Okta SCIM app Assignments tab showing Okta-Dynamic-IT group assigned at Priority 1](<./ABAC/Screenshot 2026-05-18 162710.png>)
+
+---
+
+### Step 5 — End-to-End Joiner Result: Automated, Zero-Touch
+> Left: The `Okta-Dynamic-IT` group People tab shows James Markins as the sole member, with **Managed: "By rule IT Department Rule"** — confirming no admin manually assigned him. Right: James' Okta My Apps dashboard, logged in as James in an InPrivate session, shows 5 provisioned apps including **Target SaaS App (SCIM Lab)** — the SCIM-connected app that requires group membership to exist.
+>
+> This screenshot closes the full Joiner loop: AD attribute → group rule → group membership → application access.
+
+![Split screen showing James Markins managed by rule in Okta group left and his 5 provisioned apps on the right](<./ABAC/Screenshot 2026-05-18 163235.png>)
+
+---
+
+### Step 6 — Mover Scenario: PowerShell Automation Scales to a Second User
+> A PowerShell automation script detects Mary Anderson's `Department = IT` attribute and executes `Move-ADObject` to place her into the IT Staff OU. The ADUC window confirms both **James Markins and Mary Anderson** now appear in the IT Staff OU. The same ABAC group rule will pick up Mary on the next sync and provision her access identically to James — no separate configuration needed.
+
+![PowerShell script output showing Mary Anderson moved to IT Staff OU alongside James Markins in ADUC](<./ABAC/Screenshot 2026-05-18 171633.png>)
 
 ---
 

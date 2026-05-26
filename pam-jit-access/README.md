@@ -18,18 +18,58 @@ The implementation uses **HashiCorp Vault** for dynamic secret generation and cr
 
 ## Screenshots
 
-> *(Upload your screenshots to this folder and they will render below)*
+---
 
-| Screenshot | Description |
-|---|---|
-| `01-vault-pki-secrets-engine.png` | HashiCorp Vault with dynamic secrets engine configured for AD credentials |
-| `02-jit-request-submitted.png` | JIT access request submitted by user, specifying task scope and duration |
-| `03-approval-workflow.png` | Approval workflow triggered, manager receives and approves the JIT request |
-| `04-temp-credential-issued.png` | Temporary privileged credential issued post-approval, time-limited lease active |
-| `05-session-recording-active.png` | Privileged session in progress, full session recording capturing all activity |
-| `06-credential-auto-revoked.png` | Lease expiry reached, credential automatically revoked and AD account disabled |
-| `07-vault-audit-log.png` | Vault audit log showing full credential lifecycle: issued, used, expired |
-| `08-break-glass-account.png` | Break-glass emergency access procedure documented and tested |
+### Step 1 — Baseline: Privileged Group with Zero Members
+> The `JIT-Cloud-Admins` group exists in Okta and is wired to an application — but it has **0 people** in it. There is no standing privilege. If an attacker compromised any identity at this moment, they would find no persistent admin account to leverage. This is the security posture JIT access is designed to maintain at all times.
+
+![Okta Groups list showing JIT-Cloud-Admins with 0 people — no standing privilege](<./JIT/Screenshot 2026-05-25 165046.png>)
+
+---
+
+### Step 2 — The Automation Engine: Okta Workflows JIT Flow
+> The Okta Workflows flow **"Determine if user added to temporary group"** is live (`Flow Is ON`). When a user is added to a privileged group, this 14-step pipeline fires automatically: it validates the request (`Continue If`), captures the current time (`Now`), calculates the expiry window (`Add` + `UNIX`), and writes a time-bound access record to a tracking table (`Create Row`). No human sets a reminder to revoke access later — the revocation is baked into the grant.
+
+![Okta Workflows Flow Chart showing 14-step JIT time-bounded group assignment pipeline](<./JIT/Screenshot 2026-05-25 143626.png>)
+
+---
+
+### Step 3 — The Data Infrastructure: Two Workflow Tables
+> The flow is backed by two structured tables inside the same Workflows folder. **`Temporary Groups`** is the policy configuration table — it defines which groups are eligible for JIT access and for how long. **`Users Added to Temporary Groups`** is the access ledger — it records every active JIT grant with a user ID, group ID, and expiry timestamp. Together these two tables are the policy engine's memory.
+
+![Okta Workflows Tables tab showing Temporary Groups and Users Added to Temporary Groups tables](<./JIT/Screenshot 2026-05-26 184732.png>)
+
+---
+
+### Step 4 — The Policy Config: JIT-Cloud-Admins with a 5-Minute Window
+> The `Temporary Groups` table has one record: **Group Name `JIT-Cloud-Admins`**, **Duration `5`** (minutes). This single row is the JIT policy definition. When the flow runs, it reads this table to know (a) which groups are JIT-eligible and (b) exactly how long to grant access. Changing the duration here changes the window for every future JIT grant — no code change required.
+
+![Okta Workflows Temporary Groups policy table showing JIT-Cloud-Admins with 5 minute duration](<./JIT/Screenshot 2026-05-26 184808.png>)
+
+---
+
+### Step 6 — The Access Ledger: JIT Entry Logged with Expiry Timestamp
+> The Workflows table **"Users Added to Temporary Groups"** captures the structured access record: a unique row ID, the timestamp the entry was written (`5/25/26, 8:51 PM UTC`), the User ID, an **Expiration Time** in Unix milliseconds (`1779742571000` ≈ 8:56 PM UTC — a 5-minute window), and the Group ID. A companion scheduled flow polls this table and removes users when their expiry is reached.
+>
+> This is not a ticket or a note — it is a machine-readable, time-bound access record that drives automated revocation.
+
+![Okta Workflows table showing one JIT access record with User ID expiration timestamp and Group ID](<./JIT/Screenshot 2026-05-25 171414.png>)
+
+---
+
+### Step 7 — JIT Window Active: One User Holds Temporary Privilege
+> `JIT-Cloud-Admins` now shows **1 person**. The JIT workflow ran, the expiry was set, and the user has been granted time-limited privileged access. The clock is running. This is the entire surface of standing privilege at this moment — one user, one group, with a known expiry.
+
+![Okta Groups list showing JIT-Cloud-Admins with 1 person — JIT access window is active](<./JIT/Screenshot 2026-05-26 112224.png>)
+
+---
+
+### Step 8 — Auto-Revocation Confirmed: Back to Zero
+> One minute later, `JIT-Cloud-Admins` is back to **0 people**. The expiry timestamp was reached, the scheduled flow detected it, and the user was removed from the privileged group automatically. No admin was paged. No ticket was closed. No manual action was taken. The privileged group is empty again — exactly as it should be.
+>
+> Screenshots 7 and 8 together, taken 59 seconds apart, are the proof that JIT revocation is real, automated, and immediate.
+
+![Okta Groups list showing JIT-Cloud-Admins back to 0 people after automatic expiry-driven revocation](<./JIT/Screenshot 2026-05-26 112321.png>)
 
 ---
 

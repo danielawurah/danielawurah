@@ -18,18 +18,47 @@ The goal is not just to detect violations — it is to establish a **living acce
 
 ## Screenshots
 
-> *(Upload your screenshots to this folder and they will render below)*
+---
 
-| Screenshot | Description |
-|---|---|
-| `01-entitlement-inventory.png` | Full entitlement inventory showing all user-app-role assignments catalogued |
-| `02-sod-policy-definition.png` | SoD conflict rules defined: which permission pairs constitute a violation |
-| `03-sod-violations-detected.png` | Violation report showing users with conflicting entitlements flagged |
-| `04-access-certification-campaign.png` | Certification campaign launched, managers reviewing direct reports' access |
-| `05-reviewer-decision-ui.png` | Reviewer approving or revoking entitlements inline during the campaign |
-| `06-access-revoked-post-review.png` | Revoked entitlements actioned, user access removed and logged |
-| `07-role-mining-output.png` | Role mining analysis output, peer group comparison and outlier detection |
-| `08-audit-evidence-report.png` | Final governance report exported, certification completion and violation remediation recorded |
+### Step 1 — Pre-Remediation: The Toxic Access Combination Identified in AD
+> Active Directory Users and Computers shows both Finance users side by side on the **Member Of** tab. **Jonas Miller** holds `SG-Finance-DataEntry` only — no issue. **Paul Andor** holds both `SG-Finance-DataEntry` (can create/submit financial transactions) **and** `SG-Finance-Approver` (can approve them). One person controls both sides of the same financial workflow. This is the SoD violation — the procure-to-pay cycle is in a single pair of hands.
+
+![Active Directory showing Paul Andor holding both SG-Finance-DataEntry and SG-Finance-Approver group memberships](<../screenshots/SOD AND GOVERNANCE/Screenshot 2026-05-21 162602.png>)
+
+---
+
+### Step 2 — Governance Baseline: No Access Certification Campaigns Exist
+> Okta `Identity Governance > Access Certifications` shows **Active: 0 · Scheduled: 0 · Closed: 0**. No formal access review was in place when the violation existed. This is the governance gap — the toxic combination in Step 1 could persist indefinitely with no automated mechanism to surface or challenge it.
+
+![Okta Access Certification portal showing zero active scheduled or closed campaigns](<../screenshots/SOD AND GOVERNANCE/Screenshot 2026-05-21 163835.png>)
+
+---
+
+### Step 3 — PowerShell SoD Detection and Auto-Remediation
+> The SoD script queries AD for members of both `SG-Finance-DataEntry` and `SG-Finance-Approver`, finds the overlap, and acts:
+>
+> `[ALERT] SoD Violation Detected! User 'Pandor' holds both DataEntry and Approver rights.`  
+> `[CAMPAIGN ACTION] Pending review to enforce Least Privilege...`  
+> `[REMEDIATING] Automatically revoking 'SG-Finance-DataEntry' from 'Pandor'...`  
+> `[SUCCESS] Least privilege enforced for 'Pandor'.`
+>
+> The rule logic was correct from the start — the script found the conflict the moment it ran. `Pandor` is the SamAccountName for Paul Andor. The lower-trust entitlement (DataEntry) was removed, leaving him only the Approver role.
+
+![PowerShell SoD detection script showing ALERT violation detected and SUCCESS remediation for Pandor](<../screenshots/SOD AND GOVERNANCE/Screenshot 2026-05-21 165631.png>)
+
+---
+
+### Step 4 — Post-Remediation Verification: Violation Closed in Active Directory
+> Both user property windows remain open side by side after the script ran. **Paul Andor's Member Of list now contains only** `Domain Users`, `Operations`, and `SG-Finance-Approver` — `SG-Finance-DataEntry` is gone. Jonas Miller's panel still shows `SG-Finance-DataEntry` highlighted in blue, serving as a visual reference for exactly which group was removed from Paul Andor. The PowerShell `[SUCCESS]` output is visible in the background, linking the UI evidence back to the script that produced it.
+
+![Post-remediation AD comparison showing Paul Andor without SG-Finance-DataEntry and Jonas Miller unaffected](<../screenshots/SOD AND GOVERNANCE/Screenshot 2026-05-21 165853.png>)
+
+---
+
+### Step 5 — Okta Groups Sync Confirms End-to-End Remediation
+> Okta `Directory > Groups` shows the live state after the AD group change propagated through the Okta AD Agent. `SG-Finance-Approver` now reads **1 person** — down from 2 before remediation. `SG-Finance-DataEntry` retains 2 members (Jonas Miller and one other), confirming only the violating membership was removed. The fix was not just applied in AD — it flowed through to Okta and to every application the Approver group governs. The SoD violation is fully closed across the entire identity stack.
+
+![Okta Groups view showing SG-Finance-Approver dropped to 1 person confirming AD remediation synced to Okta](<../screenshots/SOD AND GOVERNANCE/Screenshot 2026-05-21 170348.png>)
 
 ---
 
