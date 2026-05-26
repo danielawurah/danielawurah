@@ -1,7 +1,7 @@
 <h1 align="center">Daniel Awurah</h1>
 
 <p align="center">
-  <em>Identity & Access Management Specialist &nbsp;·&nbsp; GRC Strategist &nbsp;·&nbsp; Security Advisor</em>
+  <em>Identity & Access Management Specialist &nbsp;·&nbsp; GRC & Compliance Practitioner &nbsp;·&nbsp; Security Professional</em>
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/Email-awurahdaniel%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" />
   </a>
   &nbsp;
-  <img src="https://img.shields.io/badge/Location-Carmel%2C_Indiana-555555?style=flat-square" />
+  <img src="https://img.shields.io/badge/Location-Woodbridge%2C_Virginia-555555?style=flat-square" />
 </p>
 
 ---
