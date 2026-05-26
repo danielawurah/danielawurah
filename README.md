@@ -102,7 +102,20 @@
 
 ---
 
-## 04 · Certifications
+## 04 · Networking Fundamentals
+
+*Foundational networking knowledge gained through self-study.*
+
+| Topic | What I Understand |
+|---|---|
+| **Networking Basics** | How devices communicate over a network; the role of switches, routers, and protocols like TCP/IP in moving data between systems |
+| **IP Addressing & Subnetting** | How IPv4 addresses are structured, the difference between public and private ranges, and how subnetting divides a network into smaller segments using CIDR notation |
+| **DHCP** | How DHCP automatically assigns IP addresses to devices using the DORA process (Discover, Offer, Request, Acknowledge) and the role of scopes and leases |
+| **DNS** | How DNS translates domain names into IP addresses, the difference between record types (A, CNAME, MX), and why DNS is critical for services like Active Directory and SSO |
+
+---
+
+## 05 · Certifications
 
 **Earned**
 
@@ -123,7 +136,7 @@
 
 ---
 
-## 05 · Education
+## 06 · Education
 
 <p>
   <img src="https://img.shields.io/badge/B.Sc._Information_Technology-KNUST_%2F_GTUC-1B5E20?style=flat-square&logo=googlescholar&logoColor=white" />
@@ -142,7 +155,7 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 ---
 
-## 06 · Supporting Technical Skills
+## 07 · Supporting Technical Skills
 
 *Infrastructure and IT foundation that underpins IAM and security work.*
 
@@ -156,18 +169,6 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 ![VPS Hardening](https://img.shields.io/badge/VPS_Hardening-555555?style=flat-square)
 ![Web Dev](https://img.shields.io/badge/Web_Development-555555?style=flat-square)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-
----
-
-## 07 · IAM & GRC Project Work
-
-| Project | IAM / GRC Focus | Outcome |
-|---|---|---|
-| **Cyber GRC Consulting** (Multi-Client) | NIST CSF, ISO 27001, SOC 2 gap analysis · risk register development · TPRM · AI governance | Audit-ready GRC programs delivered across U.S. and African clients |
-| **ZeeHost: Identity & Infrastructure** | IAM model design · least privilege enforcement · account lifecycle · incident command | Secure multi-tenant hosting environment with enforced access controls |
-| **Zelus Technologies: AppSec & IAM** | AuthN/AuthZ architecture · OWASP Top 10 mitigation · SSDLC · vCISO advisory · Entra ID app registrations | Embedded identity and access controls into client SaaS products |
-| **Smart Campus: RBAC & Privacy by Design** | Granular RBAC for multi-role SaaS · SoD enforcement · PII data governance · Entra ID Conditional Access | Secure school management platform with compliant data handling |
-| **Imperial Communications: Risk Advisory** | Digital asset audits · credential theft prevention · Entra ID governance · cloud security policy | Hardened client digital footprint and reduced human risk exposure |
 
 ---
 

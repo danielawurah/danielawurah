@@ -147,6 +147,27 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 
 ---
 
+## 07 · Networking Fundamentals
+
+*Core networking knowledge applied across IAM infrastructure, homelab environments, and enterprise access design.*
+
+| Topic | Concept | Applied Understanding |
+|---|---|---|
+| **IP Addressing (IPv4)** | Classful addressing (Class A/B/C), public vs. private ranges (RFC 1918), loopback, APIPA | Assigns and interprets IP addresses in AD, Okta, and cloud environments; identifies private vs. routable ranges during access design |
+| **IP Subnetting** | CIDR notation, subnet masks, network/broadcast address calculation, host count per subnet | Subnets lab environments and network segments; calculates usable hosts and splits networks for isolation (e.g. VLAN-per-department design) |
+| **DHCP** | DORA process (Discover · Offer · Request · Acknowledge), lease duration, scope configuration, DHCP reservations, scope exclusions | Configures DHCP scopes in Windows Server; assigns static reservations for servers and printers; troubleshoots address conflicts and lease exhaustion |
+| **DNS** | Forward/reverse lookup zones, A, CNAME, MX, PTR, NS records; DNS resolution flow; split-horizon DNS | Manages DNS for AD-integrated zones; creates records for internal services; understands how DNS underpins SSO and Kerberos authentication |
+| **OSI & TCP/IP Model** | OSI 7-layer model vs. TCP/IP 4-layer model, layer responsibilities, protocol mapping (HTTP/S, FTP, SMTP, DNS, DHCP) | Uses layered thinking to troubleshoot connectivity issues; maps security controls to appropriate layers (L3 firewall rules, L7 WAF policies) |
+| **TCP vs. UDP** | Connection-oriented vs. connectionless, 3-way handshake (SYN · SYN-ACK · ACK), port numbers, reliability trade-offs | Identifies protocol usage for services; applies knowledge when reviewing firewall rules and network ACLs |
+| **VLANs** | VLAN purpose, trunk vs. access ports, inter-VLAN routing, segmentation for security zones | Designs VLAN schemes to segment identity infrastructure (e.g. separate VLAN for domain controllers, management traffic) |
+| **Routing Basics** | Default gateway, static routes, routing table concepts, NAT (SNAT/DNAT/PAT), split tunneling | Understands how traffic flows between subnets and the internet; applies NAT concepts in lab and Cloudflare Zero Trust tunnel configurations |
+| **Network Security** | Firewall rules (allow/deny/implicit deny), ACLs, port-based filtering, DMZ architecture, ingress/egress control | Creates and reviews firewall rules for IAM infrastructure; applies least-privilege network access aligned to Zero Trust principles |
+| **Remote Access & Tunnelling** | VPN concepts, SSL/TLS tunnels, Cloudflare Tunnel, reverse proxies, ZTNA as VPN replacement | Deployed Cloudflare Tunnel to replace VPN for internal AD access; understands how ZTNA enforces identity-aware, network-level access controls |
+| **Network Monitoring & Troubleshooting** | `ping`, `tracert/traceroute`, `nslookup`, `ipconfig/ifconfig`, `netstat`, Wireshark basics | Uses CLI tools to diagnose connectivity, DNS resolution, and route failures in homelab and enterprise-style environments |
+| **Wireless Networking** | SSID, WPA2/WPA3, 802.1X (RADIUS-based auth), guest network isolation | Understands enterprise Wi-Fi authentication tied to identity; recognises role of RADIUS in network access control (NAC) |
+
+---
+
 <p align="center">
   <a href="https://www.linkedin.com/in/daniel-awurah-09912b123/">Connect on LinkedIn</a>
 </p>
