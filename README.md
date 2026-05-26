@@ -5,29 +5,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/B.Sc._Information_Technology-KNUST-1B5E20?style=flat-square&logo=googlescholar&logoColor=white" />
-  &nbsp;
-  <a href="https://www.linkedin.com/in/daniel-awurah-09912b123/">
-    <img src="https://img.shields.io/badge/LinkedIn-daniel--awurah-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="mailto:awurahdaniel@gmail.com">
-    <img src="https://img.shields.io/badge/Email-awurahdaniel%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" />
-  </a>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Location-Woodbridge%2C_Virginia-555555?style=flat-square" />
-</p>
-
----
-
-<p align="center">
-  <a href="#01--identity--access-management">🔐 IAM</a> &nbsp;·&nbsp;
-  <a href="#02--governance-risk--compliance-grc">📋 GRC</a> &nbsp;·&nbsp;
-  <a href="#03--aiml-security-engineering">🤖 AI/ML Security</a> &nbsp;·&nbsp;
-  <a href="#04--networking-fundamentals">🌐 Networking</a> &nbsp;·&nbsp;
-  <a href="#05--certifications">🏅 Certifications</a> &nbsp;·&nbsp;
-  <a href="#06--education">🎓 Education</a> &nbsp;·&nbsp;
-  <a href="#07--supporting-technical-skills">🛠 Skills</a>
+  <a href="https://www.linkedin.com/in/daniel-awurah-09912b123/">LinkedIn</a> &nbsp;|&nbsp;
+  <a href="mailto:awurahdaniel@gmail.com">Email</a> &nbsp;|&nbsp;
+  Woodbridge, Virginia &nbsp;|&nbsp;
+  B.Sc. Information Technology, KNUST
 </p>
 
 ---
