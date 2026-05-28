@@ -1,16 +1,8 @@
-<h1 align="center">NHI-Sentinel</h1>
+# NHI-Sentinel — Non-Human Identity Governance Platform
 
-<p align="center">
-  <strong>Non-Human Identity Governance Platform</strong><br>
-  <em>Automated discovery, risk scoring, and AI-powered policy remediation across Entra ID, Okta, and Active Directory</em>
-</p>
+Automated discovery, risk scoring, and AI-powered policy remediation across Entra ID, Okta, and Active Directory.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Complete-2ea44f?style=flat-square" alt="Status">
-  <img src="https://img.shields.io/badge/Platform-Web_App_(Vite)-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Platform">
-  <img src="https://img.shields.io/badge/AI-Ollama_%7C_Llama_3-black?style=flat-square" alt="AI">
-  <img src="https://img.shields.io/badge/Connectors-Entra_ID_%7C_Okta_%7C_AD-0078D4?style=flat-square" alt="Connectors">
-</p>
+![Status](https://img.shields.io/badge/Status-70%25_Complete-e6a817?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-Web_App_(Vite)-646CFF?style=flat-square&logo=vite&logoColor=white) ![AI](https://img.shields.io/badge/AI-Ollama_%7C_Llama_3-black?style=flat-square) ![Connectors](https://img.shields.io/badge/Connectors-Entra_ID_%7C_Okta_%7C_AD-0078D4?style=flat-square)
 
 ---
 
@@ -203,9 +195,9 @@ System Settings exposes the model configuration and scan schedule. The active in
 
 ## Project Status
 
-![Complete](https://img.shields.io/badge/Status-Complete-2ea44f?style=flat-square)
+![Status](https://img.shields.io/badge/Status-70%25_Complete-e6a817?style=flat-square)
 
-NHI-Sentinel v1.0 Alpha Build running and fully operational. All three identity connectors active (Entra ID, Okta, Active Directory). 100 non-human identities inventoried, risk-scored, and triaged. AI-powered least-privilege policies generated and deployed. Risk posture reduced from 72 → 47 over the audit period, with 4 of 7 critical alerts resolved.
+NHI-Sentinel v1.0 Alpha Build — 70% complete. All three identity connectors active (Entra ID, Okta, Active Directory). Core modules operational: Identity Inventory, Behavior & Risk, Exposure & Secrets, Policy Workbench, and Security Reports. 100 non-human identities inventoried and risk-scored. Risk posture reduced from 72 → 47 over the audit period. Remaining work includes AWS IAM connector integration and additional policy export hardening.
 
 ---
 
