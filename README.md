@@ -59,15 +59,15 @@
 
 | Capability | Detail | Proof |
 |---|---|---|
-| **Framework Implementation** | NIST CSF, ISO 27001, SOC 2 covering gap analysis, control mapping and audit readiness | [Controls Mapping](https://github.com/danielawurah/grc-security-policies/tree/main/CONTROLS-MAPPING) |
-| **Risk Operations** | Enterprise risk assessments, risk quantification, dynamic risk register management | [Risk Assessment Template](https://github.com/danielawurah/grc-security-policies/blob/main/TEMPLATES/risk-assessment-template.xlsx) |
-| **Third-Party Risk (TPRM)** | Vendor security reviews, supply chain governance, procurement collaboration | [Exception Request Form](https://github.com/danielawurah/grc-security-policies/blob/main/TEMPLATES/exception-request-form.md) |
-| **Policy Lifecycle** | End-to-end security policy development, documentation standards, governance processes | [Global Controls](https://github.com/danielawurah/grc-security-policies/tree/main/GLOBAL-CONTROLS) |
-| **Compliance Advisory** | Sector experience across Healthcare, Fintech, Retail, and Technology | [Industry Verticals](https://github.com/danielawurah/grc-security-policies/tree/main/INDUSTRY-VERTICALS) |
-| **AI Governance** | Responsible AI controls, RAG system risk management, AI automation policy | [Automated Compliance Guide](https://github.com/danielawurah/grc-security-policies/blob/main/STARTUPS-SMB/automated-compliance-guide.md) |
-| **Human Risk Management** | Security awareness programs, phishing mitigation, social engineering defense | [Awareness Training Policy](https://github.com/danielawurah/grc-security-policies/blob/main/GLOBAL-CONTROLS/awareness-training.md) |
+| **Framework Implementation** | NIST CSF, ISO 27001, SOC 2 covering gap analysis, control mapping and audit readiness | Controls Mapping |
+| **Risk Operations** | Enterprise risk assessments, risk quantification, dynamic risk register management | Risk Assessment Template |
+| **Third-Party Risk (TPRM)** | Vendor security reviews, supply chain governance, procurement collaboration | Exception Request Form |
+| **Policy Lifecycle** | End-to-end security policy development, documentation standards, governance processes | Global Controls |
+| **Compliance Advisory** | Sector experience across Healthcare, Fintech, Retail, and Technology | Industry Verticals |
+| **AI Governance** | Responsible AI controls, RAG system risk management, AI automation policy | Automated Compliance Guide |
+| **Human Risk Management** | Security awareness programs, phishing mitigation, social engineering defense | Awareness Training Policy |
 
-> Full repository → [danielawurah/grc-security-policies](https://github.com/danielawurah/grc-security-policies)
+> Full repository → danielawurah/grc-security-policies
 
 > **Published Writing**
 > I also write publicly on GRC topics, covering regulatory changes, compliance strategy, and risk management for practitioners and business leaders. Published on [**The GRC Report**](https://thegrcreport.com/).
