@@ -1,7 +1,7 @@
 <h1 align="center">Daniel Awurah</h1>
 
 <p align="center">
-  <em>Identity & Access Management Specialist &nbsp;·&nbsp; GRC & Compliance Practitioner &nbsp;·&nbsp; Security Professional</em>
+  <em>Identity & Access Management Specialist &nbsp;·&nbsp; GRC Strategist &nbsp;·&nbsp; Security Advisor</em>
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/Email-awurahdaniel%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" />
   </a>
   &nbsp;
-  <img src="https://img.shields.io/badge/Location-Woodbridge%2C_Virginia-555555?style=flat-square" />
+  <img src="https://img.shields.io/badge/Location-Carmel%2C_Indiana-555555?style=flat-square" />
 </p>
 
 ---
@@ -144,27 +144,6 @@ Affiliated Institution: Ghana Technology University College (GTUC) &nbsp;·&nbsp
 | **Zelus Technologies: AppSec & IAM** | AuthN/AuthZ architecture · OWASP Top 10 mitigation · SSDLC · vCISO advisory · Entra ID app registrations | Embedded identity and access controls into client SaaS products |
 | **Smart Campus: RBAC & Privacy by Design** | Granular RBAC for multi-role SaaS · SoD enforcement · PII data governance · Entra ID Conditional Access | Secure school management platform with compliant data handling |
 | **Imperial Communications: Risk Advisory** | Digital asset audits · credential theft prevention · Entra ID governance · cloud security policy | Hardened client digital footprint and reduced human risk exposure |
-
----
-
-## 07 · Networking Fundamentals
-
-*Core networking knowledge applied across IAM infrastructure, homelab environments, and enterprise access design.*
-
-| Topic | Concept | Applied Understanding |
-|---|---|---|
-| **IP Addressing (IPv4)** | Classful addressing (Class A/B/C), public vs. private ranges (RFC 1918), loopback, APIPA | Assigns and interprets IP addresses in AD, Okta, and cloud environments; identifies private vs. routable ranges during access design |
-| **IP Subnetting** | CIDR notation, subnet masks, network/broadcast address calculation, host count per subnet | Subnets lab environments and network segments; calculates usable hosts and splits networks for isolation (e.g. VLAN-per-department design) |
-| **DHCP** | DORA process (Discover · Offer · Request · Acknowledge), lease duration, scope configuration, DHCP reservations, scope exclusions | Configures DHCP scopes in Windows Server; assigns static reservations for servers and printers; troubleshoots address conflicts and lease exhaustion |
-| **DNS** | Forward/reverse lookup zones, A, CNAME, MX, PTR, NS records; DNS resolution flow; split-horizon DNS | Manages DNS for AD-integrated zones; creates records for internal services; understands how DNS underpins SSO and Kerberos authentication |
-| **OSI & TCP/IP Model** | OSI 7-layer model vs. TCP/IP 4-layer model, layer responsibilities, protocol mapping (HTTP/S, FTP, SMTP, DNS, DHCP) | Uses layered thinking to troubleshoot connectivity issues; maps security controls to appropriate layers (L3 firewall rules, L7 WAF policies) |
-| **TCP vs. UDP** | Connection-oriented vs. connectionless, 3-way handshake (SYN · SYN-ACK · ACK), port numbers, reliability trade-offs | Identifies protocol usage for services; applies knowledge when reviewing firewall rules and network ACLs |
-| **VLANs** | VLAN purpose, trunk vs. access ports, inter-VLAN routing, segmentation for security zones | Designs VLAN schemes to segment identity infrastructure (e.g. separate VLAN for domain controllers, management traffic) |
-| **Routing Basics** | Default gateway, static routes, routing table concepts, NAT (SNAT/DNAT/PAT), split tunneling | Understands how traffic flows between subnets and the internet; applies NAT concepts in lab and Cloudflare Zero Trust tunnel configurations |
-| **Network Security** | Firewall rules (allow/deny/implicit deny), ACLs, port-based filtering, DMZ architecture, ingress/egress control | Creates and reviews firewall rules for IAM infrastructure; applies least-privilege network access aligned to Zero Trust principles |
-| **Remote Access & Tunnelling** | VPN concepts, SSL/TLS tunnels, Cloudflare Tunnel, reverse proxies, ZTNA as VPN replacement | Deployed Cloudflare Tunnel to replace VPN for internal AD access; understands how ZTNA enforces identity-aware, network-level access controls |
-| **Network Monitoring & Troubleshooting** | `ping`, `tracert/traceroute`, `nslookup`, `ipconfig/ifconfig`, `netstat`, Wireshark basics | Uses CLI tools to diagnose connectivity, DNS resolution, and route failures in homelab and enterprise-style environments |
-| **Wireless Networking** | SSID, WPA2/WPA3, 802.1X (RADIUS-based auth), guest network isolation | Understands enterprise Wi-Fi authentication tied to identity; recognises role of RADIUS in network access control (NAC) |
 
 ---
 

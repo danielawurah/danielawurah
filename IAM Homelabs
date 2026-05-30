@@ -1,0 +1,110 @@
+
+Homelabs for  Identity & Access Management
+
+
+
+
+Workflow project
+Proof 
+Purpose
+Stack
+Status
+SAMl/integration with Service Provider(salesforce)
+Video & Screenshots Included
+This lab serves as a pre-requisite step before all proceeding labs.
+Okta · SAML
+Complete
+Privileged Access Management (PAM) & "Just-in-Time" Access
+
+
+Screenshots and video
+
+
+
+
+
+
+Enterprise ABAC & Lifecycle Automation 
+Video & Runbook Included 
+Demonstrates "Zero-Touch" provisioning using Attribute-Based Access Control (ABAC). This project automates the entire Joiner-Mover-Leaver (JML) lifecycle by mapping HR attributes to dynamic group memberships, ensuring "Birthright Access" is granted instantly and revoked automatically during role changes. 
+
+
+Completed
+Identity Governance & Segregation of Duties 
+Audit Logs & Screenshots 
+ScreenshotsFocuses on mitigating "Privilege Creep" and "Insider Threat" risks. I implemented a Segregation of Duties (SoD) framework to prevent conflicting access (e.g., Requestor vs. Approver) and conducted a simulated Access Certification campaign to validate and prune elevated permissions according to the Principle of Least Privilege. 
+
+
+
+
+REST API Automation & Bulk Identity Provisioning 
+Postman Collections, JSON Payloads & Console Screenshots 
+To demonstrate advanced capability in programmatic identity lifecycle management using REST APIs. This project involves utilizing Postman to execute bulk user creation, manipulate user attributes via HTTP methods (POST, PUT, PATCH), and leverage API response codes to troubleshoot failed provisioning cycles, bypassing the standard GUI for scalable operations. 
+Okta/Entra ID API • Postman • REST APIs • JSON • HTTP Methods (GET, POST, PATCH, DELETE) 
+Complete
+Modern Protocol Mastery (OIDC + PKCE)
+
+
+Screenshots
+Integrate a custom application ( WordPress) using OIDC with PKCE
+
+
+
+
+Ortoorg
+
+
+
+
+
+
+Quewed
+
+Zero Trust Architecture & Secure Remote Access 
+
+
+
+Workflow project
+Proof 
+Purpose
+Stack
+Status
+Identity-Centric Zero Trust Network Access (ZTNA) 
+Architecture Diagram  and screenshots
+To eliminate the need for traditional VPNs by implementing a Cloudflare Tunnel to secure internal Active Directory resources. This setup enforces "Identity-as-a-Perimeter," ensuring all inbound requests are authenticated via AD/MFA at the network edge, effectively reducing the attack surface by closing all inbound firewall ports. 
+AD • Cloudflare Zero Trust • ZTNA • Cloudflare Tunnel • MFA 
+Completed
+
+
+
+
+
+
+
+AI/ML Security Engineering Projects  
+
+
+Workflow Project
+Proof
+Purpose
+Stack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GRC
+
+
